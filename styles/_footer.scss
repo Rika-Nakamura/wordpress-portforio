@@ -1,0 +1,23 @@
+@use 'global/' as g;
+
+
+
+/*-----------------------------
+
+footer
+
+----------------------------*/
+
+footer {
+    background-color: g.$main-color;
+    padding: 40px 0;
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+}
+
+
+  @media screen and (max-width:768px) {
+
+    
+  }

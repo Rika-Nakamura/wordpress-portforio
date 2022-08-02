@@ -1,0 +1,63 @@
+@mixin baseBox {
+    padding-top: 160px;
+    padding-bottom: 160px;
+}
+
+.section {
+    @include baseBox;
+}
+
+@mixin underlayerBox {
+    padding-top: 120px;
+    padding-bottom: 80px;
+}
+
+
+.section-underlayer {
+    @include underlayerBox;
+}
+
+@mixin adjustmentBox {
+    padding-top: 184px;
+    padding-bottom: 0px;
+}
+
+
+.adjustment-top {
+    @include adjustmentBox;
+}
+
+
+@media screen and (max-width:768px) {
+
+    @mixin baseBox {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .section {
+        @include baseBox;
+    }
+
+    @mixin underlayerBox {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+
+    .section-underlayer {
+        @include underlayerBox;
+    }
+
+
+    @mixin adjustmentBox {
+        padding-top: 144px;
+        padding-bottom: 0px;
+    }
+
+
+    .adjustment-top {
+        @include adjustmentBox;
+    }
+
+}

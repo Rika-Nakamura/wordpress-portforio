@@ -1,0 +1,226 @@
+@use 'global/' as g;
+
+
+/*--------------------------
+
+header 
+
+--------------------------*/
+
+
+.header {
+    background-color: g.$main-color;
+    height: 64px;
+    padding: 13px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    font-family: 'Reitam';
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    .header__nav_list {
+        display: flex;
+
+        .header__nav_item {
+            margin-left: 32px;
+            color: #fff;
+
+            a {
+                position: relative;
+                display: inline-block;
+
+                &::after {
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    content: '';
+                    width: 0;
+                    height: 2px;
+                    background-color: #fff;
+                    transition: .3s;
+                    -webkit-transform: translateX(-50%);
+                    transform: translateX(-50%);
+                }
+
+                &:hover::after {
+                    width: 100%;
+                }
+
+                &:hover {
+                    color: g.$background-color;
+                }
+            }
+
+        }
+    }
+}
+
+/* ハンバーガーメニュー */
+
+.burger-btn {
+    display: none;
+}
+
+
+
+
+@media screen and (max-width:768px) {
+
+    /* ----------------------- */
+    /* base_sp
+    /* ----------------------- */
+    button {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: transparent;
+        border: 0;
+        border-radius: 0;
+        color: inherit;
+        cursor: pointer;
+        font: inherit;
+        margin: 0;
+        outline: none;
+        padding: 0;
+        vertical-align: middle;
+    }
+
+
+    /* ------------------ */
+    /* humberger-menu */
+    /* ------------------ */
+
+    .header {
+        background-color: g.$main-color;
+        color: #fff;
+        height: 74px;
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+
+    .burger-btn {
+        display: block;
+        width: 40px;
+        height: 40px;
+        position: relative;
+        z-index: 3;
+        border: none;
+    }
+
+    .bar {
+        width: 40px;
+        height: 3px;
+        display: block;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #fff;
+    }
+
+
+
+    .bar_top {
+        top: 10px;
+    }
+
+    .bar_mid {
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .bar_bottom {
+        bottom: 10px;
+    }
+
+    .burger-btn.close .bar_top {
+        transform: translate(-50%, 10px) rotate(45deg);
+        transition: transform .3s;
+    }
+
+    .burger-btn.close .bar_mid {
+        opacity: 0;
+        transition: opacity .3s;
+    }
+
+    .burger-btn.close .bar_bottom {
+        transform: translate(-50%, -7px) rotate(-45deg);
+        transition: transform .3s;
+    }
+
+    .nav-wrapper {
+        visibility: hidden;
+        opacity: 0;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        transition: all .5s;
+        z-index: 2;
+    }
+
+    .header__nav {
+        width: 100%;
+        height: 100%;
+        background-color: g.$main-color;
+        z-index: 2;
+    }
+
+    .header__nav.close {
+        background-color: #fff;
+    }
+
+    .header__nav_list {
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .header__nav_item {
+        margin-left: 0;
+        margin-bottom: 40px;
+    }
+
+    .nav-item {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+
+
+    /* メニューオープン時  */
+
+    .nav-wrapper.fade {
+        visibility: visible;
+        opacity: 1;
+    }
+
+
+    .noscroll {
+        overflow: hidden;
+    }
+
+    header .wrapper {
+        margin: 0;
+        padding: 0;
+    }
+
+
+
+
+
+}

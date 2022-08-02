@@ -1,0 +1,491 @@
+@use '../base';
+@use '../component';
+@use '../global' as g;
+@use '../header';
+@use '../footer';
+
+
+
+/*--------------------------
+
+aboutSec
+
+--------------------------*/
+
+.aboutSec {
+
+    padding-bottom: 80px;
+
+    .aboutSec__inner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .aboutSec__photo {
+        width: 40%;
+    }
+
+    .aboutSec__description {
+        width: 60%;
+        padding-left: 9%;
+
+        .aboutSec__txt {
+            margin-bottom: 24px;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+
+    /* アコーディオン */
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .accordion {
+        margin-top: 120px;
+    }
+
+    .accordion__container {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    .accordion__title {
+        background-color: #fff;
+        border-bottom: 1px dashed #333;
+        color: #333;
+        padding: .625em .625em .625em 2em;
+        position: relative;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .accordion__title::before,
+    .accordion__title::after {
+        content: '';
+        display: block;
+        background-color: #333;
+        position: absolute;
+        top: 50%;
+        width: 15px;
+        height: 2px;
+        right: 25px;
+    }
+
+    .accordion__title::after {
+        transform: rotate(90deg);
+        transition-duration: .3s;
+    }
+
+    .accordion__title:hover,
+    .accordion__title:active,
+    .accordion__title.is-active {
+        background-color: g.$main-color;
+    }
+
+    .accordion__title.is-active::before {
+        opacity: 0;
+    }
+
+    .accordion__title.is-active::after {
+        transform: rotate(0);
+    }
+
+    .accordion__content {
+        border-left: 1px solid transparent;
+        border-right: 1px solid transparent;
+        padding: 0 1.5em;
+        line-height: 0;
+        height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition-duration: .3s;
+    }
+
+    .accordion__content.is-open {
+        // border: 1px solid g.$main-color;
+        background-color: g.$background-color;
+        padding: .625em 1.5em;
+        line-height: normal;
+        /* numberに書き換える*/
+        height: auto;
+        opacity: 1;
+    }
+
+}
+
+
+
+
+/*--------------------------
+
+careerSec
+
+--------------------------*/
+.careerSec {
+
+    .career-summary {
+        display: grid;
+        grid-template-columns: 82px 24px 1fr;
+        column-gap: 75px;
+        align-items: center;
+
+        .icon-24 {
+            width: auto;
+            height: auto;
+            max-width: 24px;
+            max-height: 24px;
+        }
+
+        .career-summary__text {
+            font-weight: bold;
+        }
+    }
+
+    .career-description {
+        text-align: justify;
+        border-left: 2px solid #7DBDCB;
+        margin-left: 169px;
+        padding: 8px 0 48px 87px;
+    }
+}
+
+/*-----------------------------
+
+skillsSec
+
+----------------------------*/
+
+.skillsSec {
+
+    .skillsSec__inner {
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        -moz-column-gap: 2.5%;
+        column-gap: 2.5%;
+
+        figure {
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            // width: 467px;
+            // height: 248px;
+        }
+
+        figcaption {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, .95);
+            -webkit-transition: .5s;
+            transition: .5s;
+            opacity: 0;
+            padding: 24px;
+        }
+
+        figure:hover figcaption {
+            opacity: 1;
+        }
+
+    }
+
+}
+
+/*-----------------------------
+
+fortSec
+
+----------------------------*/
+
+ul:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* タブメニューのデザイン */
+.tab {
+    padding: 5px 7px;
+    text-align: center;
+    display: block;
+    float: left;
+    cursor: pointer;
+    border-left: 2px solid #fff;
+    border-radius: 4px 4px 0 0;
+    background-color: #7DBDCB;
+    color: #fff;
+}
+
+/*　選択中のタブの色を変える */
+.tab.active {
+    background: #fff;
+    border-radius: 3px;
+    color: #7DBDCB;
+    transition: all 0.5s ease-out;
+}
+
+/* .showがついていない.panelは全て非表示 */
+.panel {
+    display: none;
+}
+
+/* .showがついた.panelを表示する */
+.panel.show {
+    display: block;
+    padding: 78px;
+    background-color: #fff;
+}
+
+.panel__title {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 24px;
+    color: g.$sub-color;
+}
+
+.panel__details {
+    margin-bottom: 24px;
+}
+
+
+
+
+/*-----------------------------
+
+visionSec
+
+----------------------------*/
+
+.visionSec {
+
+    .vision-summary {
+        display: grid;
+        grid-template-columns: 82px 24px 1fr;
+        column-gap: 75px;
+        align-items: center;
+
+
+        .vision-summary__text {
+            font-weight: bold;
+        }
+
+        .icon-24 {
+            width: auto;
+            height: auto;
+            max-width: 24px;
+            max-height: 24px;
+        }
+    }
+
+    .vision-description {
+        text-align: justify;
+        border-left: 2px solid #7DBDCB;
+        margin-left: 169px;
+        padding: 8px 0 48px 87px;
+    }
+}
+
+
+
+
+/*-----------------------------
+
+ctaSec
+
+----------------------------*/
+
+.ctaSec {
+    p {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .btn {
+        text-align: center;
+        margin-top: 32px;
+
+        a {
+            display: inline-block;
+            width: 304px;
+            height: 80px;
+            font-size: 20px;
+            padding-top: 26px;
+            color: #fff;
+            background-color: g.$sub-color;
+            text-align: center;
+            border-radius: 5px;
+            margin: 0 auto;
+
+            &:hover {
+                background-color: #fff;
+                color: g.$sub-color;
+                border: 3px solid g.$sub-color;
+                transition: .5s;
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+@media screen and(max-width:768px) {
+
+
+
+    /*-----------------------------
+
+aboutSec
+
+----------------------------*/
+    .aboutSec {
+
+        .aboutSec__summary {
+
+            .aboutSec__inner {
+                flex-direction: column;
+
+                .aboutSec__photo {
+                    width: 100%;
+                    margin-bottom: 24px;
+                }
+
+                .aboutSec__description {
+                    width: 100%;
+                    padding-left: 0;
+                }
+            }
+
+            /* アコーディオン */
+
+            .accordion {
+                margin-top: 56px;
+            }
+
+        }
+
+
+    }
+
+    /*-----------------------------
+
+careerSec
+
+----------------------------*/
+
+    .careerSec {
+
+        .career-item {
+
+            .career-summary {
+                grid-template-columns: 54px 27px 1fr;
+                column-gap: 24px;
+            }
+
+            .career-description {
+                text-align: justify;
+                border-left: 2px solid #7DBDCB;
+                margin-left: 89px;
+                padding: 8px 0 48px 37px;
+            }
+        }
+    }
+
+
+
+
+    /*-----------------------------
+
+fortSec
+
+----------------------------*/
+    .fortSec {
+
+        .panel.show {
+            padding: 56px 10px;
+        }
+    }
+
+
+    /*--------------------------
+
+skillsSec
+
+--------------------------*/
+
+
+
+    .skillsSec {
+
+        .skillsSec__inner {
+            grid-template-columns: 100%;
+            row-gap: 40px;
+
+            h3 {
+                margin-top: 26px;
+                margin-bottom: 30px;
+            }
+        }
+
+    }
+
+
+
+    /*-----------------------------
+
+visionSec
+
+----------------------------*/
+
+    .visionSec {
+
+        .vision-item {
+
+            .vision-summary {
+                grid-template-columns: 54px 27px 1fr;
+                column-gap: 24px;
+            }
+
+            .vision-description {
+                text-align: justify;
+                border-left: 2px solid #7DBDCB;
+                margin-left: 89px;
+                padding: 8px 0 48px 37px;
+            }
+        }
+    }
+
+
+
+    /*-----------------------------
+
+ctaSec
+
+----------------------------*/
+
+    .ctaSec {
+        .btn {
+
+            a {
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+}

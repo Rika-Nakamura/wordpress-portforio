@@ -1,0 +1,254 @@
+@use '../base';
+@use '../component';
+@use '../global' as g;
+@use '../header';
+@use '../footer';
+
+
+
+/*--------------------------
+
+fv 
+
+--------------------------*/
+.fv {
+    height: 100vh;
+    position: relative;
+    background-color: g.$main-color;
+
+    .fv__wrapper {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+
+        .fv__img {
+            text-align: center;
+        }
+
+        .fv__main-copy {
+            color: #fff;
+            text-align: center;
+            font-family: 'Reitam';
+
+            h1 {
+                font-size: 6.4rem;
+            }
+
+            .fv__en-copy {
+                margin-bottom: 50px;
+            }
+
+            .fv__jp-copy {
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+/*--------------------------
+
+worksSec 
+
+--------------------------*/
+.workSec {
+    .workSec__list {
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 40px;
+        row-gap: 40px;
+
+        .workSec__item {
+            text-align: center;
+        }
+
+
+        .workSec__item {
+
+            &:hover {
+                opacity: .6;
+                transition: .5s;
+            }
+        }
+    }
+
+}
+
+/*--------------------------
+
+top-aboutSec 
+
+--------------------------*/
+
+.top-aboutSec {
+    .aboutSec__inner {
+        display: flex;
+        align-items: center;
+
+        .aboutSec__img {
+            width: 33%;
+        }
+
+        .aboutSec__txt {
+            width: 67%;
+            padding-left: 9%;
+
+            p {
+                margin-bottom: 24px;
+
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+
+/*-----------------------------
+
+ctaSec
+
+----------------------------*/
+
+.ctaSec {
+    p {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .btn {
+        text-align: center;
+        margin-top: 32px;
+
+        a {
+            display: inline-block;
+            width: 304px;
+            height: 80px;
+            font-size: 20px;
+            padding-top: 26px;
+            color: #fff;
+            background-color: g.$sub-color;
+            text-align: center;
+            border-radius: 5px;
+            margin: 0 auto;
+
+            &:hover {
+                background-color: #fff;
+                color: g.$sub-color;
+                border: 3px solid g.$sub-color;
+                transition: .5s;
+            }
+        }
+    }
+
+}
+
+
+
+@media screen and (max-width:768px) {
+
+
+
+
+    /*--------------------------
+
+fv
+
+--------------------------*/
+
+    .fv {
+        .fv__wrapper {
+            width: 100%;
+
+            .fv__img {
+                width: 125px;
+                height: auto;
+                margin: 0 auto;
+                margin-bottom: 30px;
+            }
+
+
+            .fv__main-copy {
+
+
+                h1 {
+                    margin-bottom: 4px;
+                    font-size: 2.4rem;
+                }
+
+                .fv__jp-copy {
+                    font-size: 1.2rem;
+                }
+            }
+
+        }
+    }
+
+    /*--------------------------
+
+worksSec
+
+--------------------------*/
+
+    .workSec {
+        .workSec__list {
+            grid-template-columns: 100%;
+        }
+
+    }
+
+    /*--------------------------
+
+top-aboutSec 
+
+--------------------------*/
+
+    .top-aboutSec {
+
+        .wrapper {
+
+            .aboutSec__inner {
+                flex-direction: column;
+
+
+                .aboutSec__img {
+                    width: 160px;
+                    height: 160px;
+                    margin-bottom: 72px;
+                }
+
+                .aboutSec__txt {
+                    width: 100%;
+                    padding-left: 0;
+                }
+            }
+
+
+        }
+    }
+
+
+
+
+
+
+    /*-----------------------------
+
+ctaSec
+
+----------------------------*/
+
+    .ctaSec {
+        .btn {
+
+            a {
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+}

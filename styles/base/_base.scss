@@ -1,0 +1,164 @@
+@use '../global/' as g;
+
+
+/*-----------------------------
+
+base
+
+----------------------------*/
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.6rem;
+    letter-spacing: .05em;
+    line-height: 1.5;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: g.$text-color;
+}
+
+h2 {
+    font-family: 'Reitam';
+    font-size: 4rem;
+    letter-spacing: .05em;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: .05;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+dt {
+    font-weight: 400;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.bg-bro {
+    background-color: g.$background-color;
+}
+
+.only-SP {
+    display: none;
+}
+
+#pagetop{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background: g.$background-color;
+    border-radius: 50%;
+  }
+  #pagetop a{
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+    text-align: center;
+  }
+  #pagetop a::before{
+    font-family: "Font Awesome 5 Free";
+    content: '\f106';
+    font-weight: 900;
+    font-size: 40px;
+    color: g.$main-color;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 10px;
+    bottom: 45px;
+    right: 0;
+    left: 0;
+    margin: auto;
+  }
+
+
+
+
+@media screen and (max-width:768px) {
+    /*-----------------------------
+
+base
+
+----------------------------*/
+
+
+body {
+    font-size: 1.4rem;
+}
+
+
+h1 {
+    font-size: 2.4rem;
+}
+
+
+h2 {
+    font-size: 3.2rem;
+    margin-bottom: 56px;
+    text-transform: uppercase;
+}
+
+
+
+
+.wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.only-PC {
+    display: none;
+}
+
+.only-SP {
+    display: block;
+}
+
+
+
+.common-btn {
+    margin-top: 56px;
+}
+
+.submit-btn {
+    font-size: 1.6rem;
+}
+
+
+.btn {
+
+    a {
+        font-size: 1.6rem;
+    }
+}
+
+
+}
