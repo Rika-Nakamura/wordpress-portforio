@@ -894,9 +894,9 @@ ctaSec
   aboutSec
 
   ----------------------------*/
-  .aboutSec .aboutSec__summary {
+
     /* アコーディオン */
-  }
+
   .aboutSec .aboutSec__summary .aboutSec__inner {
     flex-direction: column;
   }
