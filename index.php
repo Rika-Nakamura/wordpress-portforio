@@ -19,9 +19,16 @@
 
         <!-- workSec -->
         <section class="workSec section wrapper">
+
+        <?php if(have_posts()): ?>
+            <?php while(have_posts()):the_post(); ?>
+                <?php
+                $cat = get_the_category();
+                $catname = $cat[0]->cat_name;
+            ?>
             <h2 class="section__title">works</h2>
             <ul class="workSec__list">
-                <li class="workSec__item"><a href="works-item2.html"><img
+                <li class="workSec__item"><a href="<?php the_permalink(); ?>"><img
                             src="img/Home/works-item1.png" alt="works1の画像"></a></li>
                 <li class="workSec__item"><a href="works-item2.html"><img
                             src="img/Home/works-item2.png" alt="works2の画像"></a></li>
@@ -88,6 +95,9 @@
         <!-- //cta -->
 
         <div id="pagetop"><a href="#"></a></div>
+
+        <?php endwhile; ?>
+    <?php endif; ?>
     </main>
     <!-- //main -->
 
