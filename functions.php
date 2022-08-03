@@ -25,3 +25,9 @@ function st_enqueue_scripts()
     wp_enqueue_script('works-item', get_template_directory_uri('/js/works-item.js'), array('jquery'), false, true);
 }
 add_action('wp_enqueue_scripts', 'st_enqueue_scripts');
+
+/**************************************************
+アイキャッチの有効化
+ **************************************************/
+
+add_theme_support('post-thumbnails');
