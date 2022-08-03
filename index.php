@@ -28,24 +28,7 @@
             ?>
             <h2 class="section__title">works</h2>
             <ul class="workSec__list">
-                <li class="workSec__item"><a href="<?php the_permalink(); ?>"><img
-                            src="img/Home/works-item1.png" alt="works1の画像"></a></li>
-                <li class="workSec__item"><a href="works-item2.html"><img
-                            src="img/Home/works-item2.png" alt="works2の画像"></a></li>
-                <li class="workSec__item"><a href="works-item2.html"><img
-                            src="img/Home/works-item3.png" alt="works3の画像"></a></li>
-                <li class="workSec__item"><a href="works-item2.html"><img
-                            src="img/Home/works-item4.png" alt="works4の画像"></a></li>
-                <li class="workSec__item"><a href="works-item2.html"><img
-                            src="img/Home/works-item5.png" alt="works5の画像"></a></li>
-                <li class="workSec__item"><a href="works-item2.html"><img
-                            src="img/Home/works-item6.png" alt="works6の画像"></a></li>
-                <li class="workSec__item"><a href="works-item2.html"><img
-                            src="img/Home/works-item7.png" alt="works7の画像"></a></li>
-                <li class="workSec__item"><a href="works-item2.html"><img
-                            src="img/Home/works-item8.png" alt="works8の画像"></a></li>
-                <li class="workSec__item"><a href="works-item2.html"><img
-                            src="img/Home/works-item9.png" alt="works9の画像"></a></li>
+                <li class="workSec__item"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a></li>
             </ul>
             <div class="common-btn">
                 <div class="btn-wrap">
