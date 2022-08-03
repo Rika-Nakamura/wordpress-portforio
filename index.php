@@ -33,7 +33,7 @@
             <div class="common-btn">
                 <div class="btn-wrap">
                     <div class="btn-inner">
-                        <a href="works.html">もっと見る</a>
+                        <a href="<?php echo esc_url(home_url('/category/works/')); ?>">もっと見る</a>
                     </div>
                 </div>
             </div>
