@@ -23,7 +23,20 @@
  
             <h2 class="section__title">works</h2>
             <ul class="workSec__list">
+
+
+            <?php
+                $args = array(
+                'posts_per_page' => 9
+            );
+            ?>
+            <?php $posts = get_posts($args); ?>
+            <?php foreach($posts as $post): ?>
+                <?php setup_postdata($post); ?>
                 <li class="workSec__item"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a></li>
+
+                <?php endforeach; ?>
+                <?php wp_reset_postdata(); ?>
             </ul>
             <div class="common-btn">
                 <div class="btn-wrap">
