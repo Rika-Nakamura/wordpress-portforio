@@ -51,7 +51,7 @@
         <!-- //worksSec -->
 
         <!-- aboutSec -->
-        <section class="aboutSec section bg-bro">
+        <section class="top-aboutSec section bg-bro">
             <div class="wrapper">
                 <h2 class="section__title">about</h2>
                 <div class="aboutSec__inner">
