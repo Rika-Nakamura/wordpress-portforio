@@ -5,8 +5,8 @@
 
     <!-- workSec -->
     <section class="worksSec adjustment-top wrapper">
-        <?php if (have_posts()) : ?>
-            <?php while (have_posts()) : the_post(); ?>
+        <?php if (have_posts()) :
+            while (have_posts()) : the_post(); ?>
                 <h2 class="section__title"><?php the_title(); ?></h2>
 
                 <!-- スライドショー -->
@@ -51,8 +51,8 @@
                 </dl>
                 <div class="btn worksSec__btn"><a href="<?php echo esc_url(home_url('/category/works/')); ?>">戻る</a></div>
 
-            <?php endwhile; ?>
-        <?php endif; ?>
+            <?php endwhile; 
+        endif; ?>
     </section>
     <!-- //workSec -->
 
