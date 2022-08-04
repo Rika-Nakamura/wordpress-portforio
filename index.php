@@ -7,7 +7,6 @@
         <div class="fv__wrapper">
             <p class="fv__img">
             <img src="<?php echo esc_url(get_theme_file_uri('img/home/fv-illust 1.png')); ?>" alt="Rika Nakamuraのイラスト">
-                <!-- <img src="img/Home/fv-illust 1.png" alt="Rika Nakamuraのイラスト"> -->
             </p>
             <div class="fv__main-copy">
                 <h1>rikanakamura</h1>
