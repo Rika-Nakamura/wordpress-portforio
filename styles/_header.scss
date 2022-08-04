@@ -31,9 +31,9 @@ header
 
         .header__nav_item {
             margin-left: 32px;
-            color: #fff !important;
+            color: #fff;
 
-            a {
+            .header__nav_link {
                 color: #fff;
                 position: relative;
                 display: inline-block;
