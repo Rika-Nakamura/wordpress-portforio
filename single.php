@@ -7,6 +7,10 @@
     <section class="worksSec adjustment-top wrapper">
         <?php if (have_posts()) :
             while (have_posts()) : the_post(); ?>
+                <?php
+                $cat = get_the_category();
+                $catname = $cat[0]->cat_name;
+                ?>
                 <h2 class="section__title"><?php the_title(); ?></h2>
 
                 <!-- スライドショー -->
@@ -51,7 +55,7 @@
                 </dl>
                 <div class="btn worksSec__btn"><a href="<?php echo esc_url(home_url('/category/works/')); ?>">戻る</a></div>
 
-            <?php endwhile; 
+        <?php endwhile;
         endif; ?>
     </section>
     <!-- //workSec -->
