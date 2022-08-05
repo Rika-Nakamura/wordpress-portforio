@@ -9,24 +9,23 @@
         <div class="wrapper">
             <h2 class="section__title">works</h2>
             <ul class="workSec__list">
-                <li class="workSec__item"><a href="works-item2.html"><img src="img/Home/works-item1.png" alt="item1の画像"></a>
-                </li>
-                <li class="workSec__item"><a href="works-item2.html"><img src="img/Home/works-item2.png" alt="item2の画像"></a>
-                </li>
-                <li class="workSec__item"><a href="works-item2.html"><img src="img/Home/works-item3.png" alt="item3の画像"></a>
-                </li>
-                <li class="workSec__item"><a href="works-item2.html"><img src="img/Home/works-item4.png" alt="item4の画像"></a>
-                </li>
-                <li class="workSec__item"><a href="works-item2.html"><img src="img/Home/works-item5.png" alt="item5の画像"></a>
-                </li>
-                <li class="workSec__item"><a href="works-item2.html"><img src="img/Home/works-item6.png" alt="item6の画像"></a>
-                </li>
-                <li class="workSec__item"><a href="works-item2.html"><img src="img/Home/works-item7.png" alt="item7の画像"></a>
-                </li>
-                <li class="workSec__item"><a href="works-item2.html"><img src="img/Home/works-item8.png" alt="item8の画像"></a>
-                </li>
-                <li class="workSec__item"><a href="works-item2.html"><img src="img/Home/works-item9.png" alt="item9の画像"></a>
-                </li>
+
+                <?php
+                $args = array(
+                    'posts_per_page' => 9
+                );
+                ?>
+                <?php $posts = get_posts($args); ?>
+                <?php foreach ($posts as $post) : ?>
+                    <?php setup_postdata($post); ?>
+                    <li class="workSec__item">
+                        <a href="<?php the_permalink(); ?>">
+                            <img src="img/Home/works-item1.png" alt="item1の画像">
+                        </a>
+                    </li>
+
+                <?php endforeach; ?>
+                <?php wp_reset_postdata(); ?>
             </ul>
 
             <ul class="pagination">
