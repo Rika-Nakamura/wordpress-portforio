@@ -68,7 +68,7 @@
             <div class="common-btn">
                 <div class="btn-wrap">
                     <div class="btn-inner">
-                        <a href="<?php echo esc_url(home_url('/category/about/')); ?>">詳細を見る</a>
+                        <a href="<?php echo get_permalink(52); ?>">詳細を見る</a>
                         <!-- <a href="about.html">詳細を見る</a> -->
                     </div>
                 </div>
@@ -85,7 +85,7 @@
             <p>ご連絡の際は、お気軽に<br class="only-SP">下記リンク先フォームをご利用ください。</p>
             <div class="btn">
                 <!-- <a href="contact.html"> -->
-                <a href="<?php echo esc_url(home_url('/category/contact/')); ?>">
+                <a href="<?php echo get_permalink(); ?>">
                     お問い合わせ
                 </a>
             </div>
