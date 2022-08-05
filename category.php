@@ -28,6 +28,12 @@
                 <?php wp_reset_postdata(); ?>
             </ul>
 
+
+            <?php
+                if (function_exists("pagination")) {
+                pagination($wp_query->max_num_pages);
+                }
+            ?>
             <ul class="pagination">
                 <li>1</li>
                 <li>
@@ -35,6 +41,7 @@
                 </li>
             </ul>
         </div>
+
 
         <!-- cta -->
         <section class="ctaSec section-underlayer bg-bro">
