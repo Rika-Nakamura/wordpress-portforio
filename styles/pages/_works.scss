@@ -11,17 +11,33 @@
 pagination
 
 ----------------------------*/
-.pagination {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-    margin-bottom: 160px;
+// .pagination {
+//     display: flex;
+//     justify-content: center;
+//     margin-top: 40px;
+//     margin-bottom: 160px;
 
-    li {
-        margin: 0 20px;
-        font-size: 1.4rem;
-    }
+//     li {
+//         margin: 0 20px;
+//         font-size: 1.4rem;
+//     }
+// }
+
+.pagination {
+    
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        li {
+            padding: 0 10px;
+          }
+      }
+
 }
+
+
 
 
 /*-----------------------------
@@ -54,7 +70,7 @@ footer {
 
 
 @media screen and(max-width:768px) {
-    
+
 
 
 
@@ -63,13 +79,13 @@ footer {
 workSec
 
 --------------------------*/
-.workSec {
-    .workSec__list {
-        grid-template-columns: 100%;
-        text-align: center;
-    }
+    .workSec {
+        .workSec__list {
+            grid-template-columns: 100%;
+            text-align: center;
+        }
 
-}
+    }
 
 
 
