@@ -20,7 +20,7 @@
                     <?php setup_postdata($post); ?>
                     <li class="workSec__item">
                         <a href="<?php the_permalink(); ?>">
-                            <img src="img/Home/works-item1.png" alt="item1の画像">
+                            <?php the_post_thumbnail(); ?>
                         </a>
                     </li>
 
