@@ -11,7 +11,7 @@
                 $cat = get_the_category();
                 $catname = $cat[0]->cat_name;
                 ?>
-                <h2 class="section__title"><?php the_title(); ?></h2>
+                <h2 class="section__title">works</h2>
 
                 <!-- スライドショー -->
                 <div class="worksSec__slideshow">
