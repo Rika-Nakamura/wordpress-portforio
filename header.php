@@ -26,9 +26,8 @@
                 <nav class="header__nav">
                     <ul class="header__nav_list ">
                         <li class="header__nav_item"><a class="header__nav_link" href="<?php echo esc_url(home_url('/category/works/')); ?>">works</a></li>
-                        <li class="header__nav_item"><a class="header__nav_link" href="<?php echo esc_url(home_url('/category/about/')); ?>">about</a></li>
-                        <!-- <li class="header__nav_item"><a class="header__nav_link" href="<?php echo get_permalink(52); ?>">about</a></li> -->
-                        <li class="header__nav_item"><a class="header__nav_link" href="<?php echo get_permalink(61); ?>">contact</a></li>
+                        <li class="header__nav_item"><a class="header__nav_link" href="<?php echo esc_url(home_url('/about/')); ?>">about</a></li>
+                        <li class="header__nav_item"><a class="header__nav_link" href="<?php echo esc_url(home_url('/contact/')); ?>">contact</a></li>
                     </ul>
                 </nav>
             </div>
