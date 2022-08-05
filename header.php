@@ -25,7 +25,7 @@
             <div class="nav-wrapper">
                 <nav class="header__nav">
                     <ul class="header__nav_list ">
-                        <li class="header__nav_item"><a class="header__nav_link" href="<?php echo get_permalink(); ?>">works</a></li>
+                        <li class="header__nav_item"><a class="header__nav_link" href="<?php echo esc_url(home_url('/category/works/')); ?>">works</a></li>
                         <li class="header__nav_item"><a class="header__nav_link" href="<?php echo get_permalink(52); ?>">about</a></li>
                         <li class="header__nav_item"><a class="header__nav_link" href="<?php echo get_permalink(61); ?>">contact</a></li>
                     </ul>
