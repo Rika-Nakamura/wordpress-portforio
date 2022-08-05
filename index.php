@@ -85,7 +85,7 @@
             <p>ご連絡の際は、お気軽に<br class="only-SP">下記リンク先フォームをご利用ください。</p>
             <div class="btn">
                 <!-- <a href="contact.html"> -->
-                <a href="<?php echo get_permalink(); ?>">
+                <a href="<?php echo get_permalink(61); ?>">
                     お問い合わせ
                 </a>
             </div>
