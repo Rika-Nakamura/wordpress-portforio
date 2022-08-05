@@ -106,8 +106,8 @@
         <h2 class="section__title">skills</h2>
         <div class="skillsSec__inner">
             <figure>
-                <img class="only-PC" src="img/about/coding.png" alt="PCの画像">
-                <img class="only-SP" src="img/about/coding-sp.png" alt="PCの画像">
+                <img class="only-PC" src="<?php echo esc_url(get_theme_file_uri('img/about/coding.png')); ?>" alt="PCの画像">
+                <img class="only-SP" src="<?php echo esc_url(get_theme_file_uri('img/about/coding-sp.png')); ?>" alt="PCの画像">
                 <figcaption>
                     <h3>HTML/css/sass/jQuery/JavaScript/<br>wordpress/CSS設計/Git</h3>
                     <p>レスポンシブデザイン、Sassの記述が可能です。jQueryやJavaScriptを用いてサイトに動きを付けることも可能です。静的サイトにWordpressを組み込みました。
@@ -116,7 +116,7 @@
                 </figcaption>
             </figure>
             <figure class="skillsSec__right">
-                <img class="only-PC" src="img/about/design.png" alt="Figmaのロゴの画像">
+                <img class="only-PC" src="<?php echo esc_url(get_theme_file_uri('img/about/design.png')); ?>" alt="Figmaのロゴの画像">
                 <img class="only-SP" src="img/about/design-sp.png" alt="Figmaのロゴの画像">
                 <figcaption>
                     <h3>Figma/XD/photoshop/illustrator</h3>
