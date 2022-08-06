@@ -27,7 +27,7 @@ function st_enqueue_scripts()
 
 
 //works詳細ページにのみ読み込むファイル
-if (is_single('works')) {
+if (is_single()) {
   wp_enqueue_script('works-item', get_theme_file_uri('/js/works-item.js'), array('jquery'), false, true);
 }
 
