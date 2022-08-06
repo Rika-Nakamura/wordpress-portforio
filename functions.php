@@ -4,34 +4,32 @@
 /**************************************************
 CSSファイルの読み込み
  **************************************************/
-function my_enqueue_styles() {
-   wp_enqueue_style('style', get_template_directory_uri() . '/styles/styles.css', array(), false, 'all');
- }
- add_action('wp_enqueue_scripts', 'my_enqueue_styles');
+function my_enqueue_styles()
+{
+  wp_enqueue_style('style', get_template_directory_uri() . '/styles/styles.css', array(), false, 'all');
+}
+add_action('wp_enqueue_scripts', 'my_enqueue_styles');
 
 
 
-
- 
-
- /**************************************************
+/**************************************************
  JSファイルの読み込み
-  **************************************************/
-  
- function st_enqueue_scripts()
- {  
-    //共通ファイルを読み込み
-    if (!is_single('works')) 
-    wp_deregister_script('jquery');
-    wp_enqueue_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js', array(), '3.6.0', false);
-    wp_enqueue_script('main', get_theme_file_uri('/js/main.js'), array('jquery'), false, true);
- }
-  
- //works詳細ページにのみ読み込むファイル
- if (is_single('works')) {
-  wp_enqueue_script('works-item', get_theme_file_uri('/js/works-item.js'), array('jquery'), false, true);
-  }
+ **************************************************/
 
+function st_enqueue_scripts()
+{
+  //共通ファイルを読み込み
+  if (!is_single('works'))
+    wp_deregister_script('jquery');
+  wp_enqueue_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js', array(), '3.6.0', false);
+  wp_enqueue_script('main', get_theme_file_uri('/js/main.js'), array('jquery'), false, true);
+}
+
+//works詳細ページにのみ読み込むファイル
+if (is_single('works')) {
+  wp_enqueue_script('works-item', get_theme_file_uri('/js/works-item.js'), array('jquery'), false, true);
+}
+add_action('wp_enqueue_scripts', 'st_enqueue_scripts');
 /**************************************************
 アイキャッチの有効化
  **************************************************/
@@ -43,40 +41,41 @@ add_theme_support('post-thumbnails');
 ページネーションの表示
  **************************************************/
 
-function pagination($pages = '', $range = 2) {
+function pagination($pages = '', $range = 2)
+{
   $showitems = ($range * 2) + 1;
 
   // 現在のページ数
   global $paged;
-  if(empty($paged)) {
+  if (empty($paged)) {
     $paged = 1;
   }
 
   // 全ページ数
-  if($pages == '') {
+  if ($pages == '') {
     global $wp_query;
     $pages = $wp_query->max_num_pages;
-    if(!$pages) {
+    if (!$pages) {
       $pages = 1;
     }
   }
 
   // ページ数が2ぺージ以上の場合のみ、ページネーションを表示
-  if(1 != $pages) {
+  if (1 != $pages) {
     echo '<div class="pagination">';
     echo '<ul>';
     // 1ページ目でなければ、「前のページ」リンクを表示
-    if($paged > 1) {
+    if ($paged > 1) {
       echo '<li class="prev"><a href="' . esc_url(get_pagenum_link($paged - 1)) . '">前のページ</a></li>';
     }
 
     // ページ番号を表示（現在のページはリンクにしない）
-    for ($i=1; $i <= $pages; $i++) {
-      if (1 != $pages &&(!($i >= $paged+$range+1 || $i <= $paged-$range-1) || $pages <= $showitems )) {
+    for ($i = 1; $i <= $pages; $i++) {
+      if (1 != $pages && (!($i >= $paged + $range + 1 || $i <= $paged - $range - 1) || $pages <= $showitems)) {
         if ($paged == $i) {
-          echo '<li class="active">' .$i. '</li>';
+          echo '<li class="active">' . $i . '</li>';
         } else {
-          echo '<li><a href="' . esc_url(get_pagenum_link($i)) . '">' .$i. '</a></li>';
+          echo '<li><a href="' . esc_url(get_pagenum_link($i)) . '">' . $i . '</a></li>';
         }
       }
     }
