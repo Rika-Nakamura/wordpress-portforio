@@ -20,7 +20,7 @@ JSファイルの読み込み
 function st_enqueue_scripts()
 {
     wp_deregister_script('jquery');
-    wp_enqueue_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', array(), '3.5.1', false);
+    wp_enqueue_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js', array(), '3.6.0', false);
     wp_enqueue_script('main', get_template_directory_uri() . '/js/main.js', array('jquery'), false, true);
     wp_enqueue_script('works-item', get_template_directory_uri() . '/js/works-item.js', array('jquery'), false, true);
 }
