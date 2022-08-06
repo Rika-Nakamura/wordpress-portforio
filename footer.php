@@ -8,7 +8,12 @@
 
     <!-- //footer -->
 
+    <?php if (is_page('about')) : ?>
+        wp_enqueue_script('works-item', get_theme_file_uri('/js/works-item.js'), array('jquery'), false, true);
+    <?php endif; ?>
 
-</body>
 
-</html>
+
+    </body>
+
+    </html>
