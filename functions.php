@@ -22,7 +22,7 @@ function st_enqueue_scripts()
     wp_deregister_script('jquery');
     wp_enqueue_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js', array(), '3.6.0', false);
     wp_enqueue_script('main', get_theme_file_uri('/js/main.js'), array('jquery'), false, true);
-    wp_enqueue_script('works-item', get_theme_file_uri('/js/works-item.js'), array('jquery'), false, true);
+    // wp_enqueue_script('works-item', get_theme_file_uri('/js/works-item.js'), array('jquery'), false, true);
 }
 add_action('wp_enqueue_scripts', 'st_enqueue_scripts');
 
