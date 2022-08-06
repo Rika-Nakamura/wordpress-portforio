@@ -10,6 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 
+    <?php if (is_page('works')) : ?>
+        wp_enqueue_script('works-item', get_theme_file_uri('/js/works-item.js'), array('jquery'), false, true);
+    <?php endif; ?>
+
     <?php wp_head(); ?>
 </head>
 
