@@ -10,7 +10,7 @@
 
 
 
-    <?php if (is_page('category/works')) : ?>
+    <?php if (is_page('works')) : ?>
         function st_enqueue_scripts()
         {
         wp_enqueue_script('works-item', get_theme_file_uri('/js/works-item.js'), array('jquery'), false, true);
