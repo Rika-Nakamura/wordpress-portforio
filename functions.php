@@ -25,6 +25,17 @@ function st_enqueue_scripts()
 }
 add_action('wp_enqueue_scripts', 'st_enqueue_scripts');
 
+
+
+<?php if (is_single('works')) : ?>
+  function st_enqueue_scripts()
+  {
+  wp_enqueue_script('works-item', get_theme_file_uri('/js/works-item.js'), array('jquery'), false, true);
+  }
+  add_action('wp_enqueue_scripts', 'st_enqueue_scripts');
+<?php endif; ?>
+
+
 /**************************************************
 アイキャッチの有効化
  **************************************************/
