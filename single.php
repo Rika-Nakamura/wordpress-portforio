@@ -67,7 +67,7 @@
             <h2 class="section__title">contact</h2>
             <p>ポートフォリオWebサイトをご覧頂き<br class="only-SP">ありがとうございます。</p>
             <p>ご連絡の際は、お気軽に<br class="only-SP">下記リンク先フォームをご利用ください。</p>
-            <div class="btn"><a href="contact.html">お問い合わせ</a></div>
+            <div class="btn"><a href="<?php echo esc_url(home_url('contact')); ?>">お問い合わせ</a></div>
         </div>
     </section>
     <!-- //cta -->
