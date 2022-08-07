@@ -10,7 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 
-
+    <script>
+        document.addEventListener('wpcf7mailsent', function(event) {
+            location = 'http://portforio.local/contact/';
+        }, false);
+    </script>
     <?php wp_head(); ?>
 </head>
 
