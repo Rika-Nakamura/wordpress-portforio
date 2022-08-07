@@ -91,4 +91,25 @@ function pagination($pages = '', $range = 2)
     echo '</ul>';
     echo '</div>';
   }
+
+
+  /**************************************************
+  コンタクトフォーム7読み込み制限 
+ **************************************************/
+function cf7_limitation() {
+	add_filter( 'wpcf7_load_js', '__return_false' );
+	add_filter( 'wpcf7_load_css', '__return_false' );
+	if( is_page( 'contact' ) ){
+		if ( function_exists( 'wpcf7_enqueue_scripts' ) ) {
+			wpcf7_enqueue_scripts();
+		}
+	if ( function_exists( 'wpcf7_enqueue_styles' ) ) {
+		wpcf7_enqueue_styles();
+	}
+	}
+}
+add_action( 'template_redirect', 'cf7_limitation' );
+
+
+
 }
