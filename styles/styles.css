@@ -1,171 +1,4 @@
 @charset "UTF-8";
-.section {
-  padding-top: 160px;
-  padding-bottom: 160px;
-}
-
-.section-underlayer {
-  padding-top: 120px;
-  padding-bottom: 80px;
-}
-
-.adjustment-top {
-  padding-top: 184px;
-  padding-bottom: 0px;
-}
-
-@media screen and (max-width: 768px) {
-  .section {
-    padding-top: 80px;
-    padding-bottom: 80px;
-  }
-  .section-underlayer {
-    padding-top: 80px;
-    padding-bottom: 80px;
-  }
-  .adjustment-top {
-    padding-top: 144px;
-    padding-bottom: 0px;
-  }
-}
-/*-----------------------------
-
-base
-
-----------------------------*/
-html {
-  font-size: 62.5%;
-  box-sizing: border-box;
-}
-
-body {
-  font-size: 1.6rem;
-  letter-spacing: 0.05em;
-  line-height: 1.5;
-  font-family: "Noto Sans JP", sans-serif;
-  color: #333333;
-}
-
-h2 {
-  font-family: "Reitam";
-  font-size: 4rem;
-  letter-spacing: 0.05em;
-  margin-bottom: 60px;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-h3 {
-  font-size: 2rem;
-  font-weight: bold;
-  letter-spacing: 0.05;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: #fff;
-}
-
-dt {
-  font-weight: 400;
-}
-
-.wrapper {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.bg-bro {
-  background-color: #F0EDE6;
-}
-
-.only-SP {
-  display: none;
-}
-
-#pagetop {
-  width: 50px;
-  height: 50px;
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  background: #F0EDE6;
-  border-radius: 50%;
-}
-
-#pagetop a {
-  position: relative;
-  display: block;
-  width: 50px;
-  height: 50px;
-  text-decoration: none;
-  text-align: center;
-}
-
-#pagetop a::before {
-  font-family: "Font Awesome 5 Free";
-  content: "\f106";
-  font-weight: 900;
-  font-size: 40px;
-  color: #FFA353;
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  top: 10px;
-  bottom: 45px;
-  right: 0;
-  left: 0;
-  margin: auto;
-}
-
-@media screen and (max-width: 768px) {
-  /*-----------------------------
-
-  base
-
-  ----------------------------*/
-  body {
-    font-size: 1.4rem;
-  }
-  h1 {
-    font-size: 2.4rem;
-  }
-  h2 {
-    font-size: 3.2rem;
-    margin-bottom: 56px;
-    text-transform: uppercase;
-  }
-  .wrapper {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  .only-PC {
-    display: none;
-  }
-  .only-SP {
-    display: block;
-  }
-  .common-btn {
-    margin-top: 56px;
-  }
-  .submit-btn {
-    font-size: 1.6rem;
-  }
-  .btn a {
-    font-size: 1.6rem;
-  }
-}
 /*! destyle.css v2.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 /* Reset box-model and set borders */
 /* ============================================ */
@@ -611,6 +444,173 @@ template {
   display: none;
 }
 
+.section {
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+
+.section-underlayer {
+  padding-top: 120px;
+  padding-bottom: 80px;
+}
+
+.adjustment-top {
+  padding-top: 184px;
+  padding-bottom: 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .section-underlayer {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .adjustment-top {
+    padding-top: 144px;
+    padding-bottom: 0px;
+  }
+}
+/*-----------------------------
+
+base
+
+----------------------------*/
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  letter-spacing: 0.05em;
+  line-height: 1.5;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #333333;
+}
+
+h2 {
+  font-family: "Reitam";
+  font-size: 4rem;
+  letter-spacing: 0.05em;
+  margin-bottom: 60px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.05;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+dt {
+  font-weight: 400;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.bg-bro {
+  background-color: #F0EDE6;
+}
+
+.only-SP {
+  display: none;
+}
+
+#pagetop {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: #F0EDE6;
+  border-radius: 50%;
+}
+
+#pagetop a {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  text-align: center;
+}
+
+#pagetop a::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f106";
+  font-weight: 900;
+  font-size: 40px;
+  color: #FFA353;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 10px;
+  bottom: 45px;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+  /*-----------------------------
+
+  base
+
+  ----------------------------*/
+  body {
+    font-size: 1.4rem;
+  }
+  h1 {
+    font-size: 2.4rem;
+  }
+  h2 {
+    font-size: 3.2rem;
+    margin-bottom: 56px;
+    text-transform: uppercase;
+  }
+  .wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .only-PC {
+    display: none;
+  }
+  .only-SP {
+    display: block;
+  }
+  .common-btn {
+    margin-top: 56px;
+  }
+  .submit-btn {
+    font-size: 1.6rem;
+  }
+  .btn a {
+    font-size: 1.6rem;
+  }
+}
 .common-btn {
   margin-top: 72px;
   color: #fff;
