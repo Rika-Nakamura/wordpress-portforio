@@ -25,11 +25,11 @@
 
   /* ハンバーガーメニュー */
 
-  $(function () {
-    $('.burger-btn').on('click', function () {
-      $('.burger-btn').toggleClass('close');
-      $('.nav-wrapper').toggleClass('fade');
-      $('body').toggleClass('noscroll');
+  jQuery(function () {
+    jQuery('.burger-btn').on('click', function () {
+      jQuery('.burger-btn').toggleClass('close');
+      jQuery('.nav-wrapper').toggleClass('fade');
+      jQuery('body').toggleClass('noscroll');
     });
   });
 
@@ -83,21 +83,21 @@
 
   /* Topへ戻るボタン */
 
-  $(function(){
-    var pagetop = $('#pagetop');
+  jQuery(function(){
+    var pagetop = jQuery('#pagetop');
     // ボタン非表示
     pagetop.hide();
   
     // 100px スクロールしたらボタン表示
-    $(window).scroll(function () {
-       if ($(this).scrollTop() > 100) {
+    jQuery(window).scroll(function () {
+       if (jQuery(this).scrollTop() > 100) {
             pagetop.fadeIn();
        } else {
             pagetop.fadeOut();
        }
     });
     pagetop.click(function () {
-       $('body, html').animate({ scrollTop: 0 }, 500);
+      jQuery('body, html').animate({ scrollTop: 0 }, 500);
        return false;
     });
   });
