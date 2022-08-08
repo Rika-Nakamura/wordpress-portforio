@@ -20,7 +20,7 @@
                     <?php setup_postdata($post); ?>
                     <li class="workSec__item">
                         <a href="<?php the_permalink(); ?>">
-                            <?php the_post_thumbnail(); ?>
+                        <img src="<?php the_post_thumbnail_url('full'); ?>" alt="">
                         </a>
                     </li>
 
