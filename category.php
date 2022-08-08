@@ -12,7 +12,7 @@
 
                 <?php
                 $args = array(
-                    'posts_per_page' => 20
+                    'posts_per_page' => 9
                 );
                 ?>
                 <?php $posts = get_posts($args); ?>
@@ -30,13 +30,15 @@
 
 
             <ul class="pagination">
-
+        
 
                 <?php
                 if (function_exists("pagination")) {
                     pagination($wp_query->max_num_pages);
                 }
                 ?>
+
+
             </ul>
         </div>
 
