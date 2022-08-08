@@ -7,30 +7,34 @@
     <!-- workSec -->
     <section class="workSec  adjustment-top">
         <div class="wrapper">
+
             <h2 class="section__title">works</h2>
             <ul class="workSec__list">
 
                 <?php
-                $args = array(
-                    'posts_per_page' => 9
-                );
+                $cat = get_the_category();
+                $catname = $cat[0]->cat_name;
                 ?>
-                <?php $posts = get_posts($args); ?>
-                <?php foreach ($posts as $post) : ?>
-                    <?php setup_postdata($post); ?>
-                    <li class="workSec__item">
-                        <a href="<?php the_permalink(); ?>">
-                        <img src="<?php the_post_thumbnail_url('full'); ?>" alt="">
-                        </a>
-                    </li>
 
-                <?php endforeach; ?>
-                <?php wp_reset_postdata(); ?>
+
+                <?php if (have_posts()) : ?>
+                    <?php while (have_posts()) : the_post(); ?>
+
+
+                        <li class="workSec__item">
+                            <a href="<?php the_permalink(); ?>">
+                                <img src="<?php the_post_thumbnail_url(''); ?>" alt="">
+                            </a>
+                        </li>
+                    <?php endwhile; ?>
+                <?php endif; ?>
+
             </ul>
 
 
+
             <ul class="pagination">
-        
+
 
                 <?php
                 if (function_exists("pagination")) {
