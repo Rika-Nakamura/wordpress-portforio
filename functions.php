@@ -42,44 +42,42 @@ add_theme_support('post-thumbnails');
 
 
 /**************************************************
-ページネーションの表示
- **************************************************/
-
-function pagination($pages = '', $range = 2)
-{
+ページネーション
+**************************************************/
+function pagination($pages = '', $range = 2) {
   $showitems = ($range * 2) + 1;
 
   // 現在のページ数
   global $paged;
-  if (empty($paged)) {
+  if(empty($paged)) {
     $paged = 1;
   }
 
   // 全ページ数
-  if ($pages == '') {
+  if($pages == '') {
     global $wp_query;
     $pages = $wp_query->max_num_pages;
-    if (!$pages) {
+    if(!$pages) {
       $pages = 1;
     }
   }
 
   // ページ数が2ぺージ以上の場合のみ、ページネーションを表示
-  if (1 != $pages) {
+  if(1 != $pages) {
     echo '<div class="pagination">';
     echo '<ul>';
     // 1ページ目でなければ、「前のページ」リンクを表示
-    if ($paged > 1) {
+    if($paged > 1) {
       echo '<li class="prev"><a href="' . esc_url(get_pagenum_link($paged - 1)) . '">前のページ</a></li>';
     }
 
     // ページ番号を表示（現在のページはリンクにしない）
-    for ($i = 1; $i <= $pages; $i++) {
-      if (1 != $pages && (!($i >= $paged + $range + 1 || $i <= $paged - $range - 1) || $pages <= $showitems)) {
+    for ($i=1; $i <= $pages; $i++) {
+      if (1 != $pages &&(!($i >= $paged+$range+1 || $i <= $paged-$range-1) || $pages <= $showitems )) {
         if ($paged == $i) {
-          echo '<li class="active">' . $i . '</li>';
+          echo '<li class="active">' .$i. '</li>';
         } else {
-          echo '<li><a href="' . esc_url(get_pagenum_link($i)) . '">' . $i . '</a></li>';
+          echo '<li><a href="' . esc_url(get_pagenum_link($i)) . '">' .$i. '</a></li>';
         }
       }
     }
@@ -92,6 +90,8 @@ function pagination($pages = '', $range = 2)
     echo '</div>';
   }
 }
+      
+
 
 
   /**************************************************
