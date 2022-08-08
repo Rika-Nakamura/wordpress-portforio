@@ -3,11 +3,9 @@
 <!-- main -->
 <main>
 
-
     <!-- workSec -->
     <section class="workSec  adjustment-top">
         <div class="wrapper">
-
             <h2 class="section__title">works</h2>
             <ul class="workSec__list">
 
@@ -28,23 +26,16 @@
                         </li>
                     <?php endwhile; ?>
                 <?php endif; ?>
-
             </ul>
-
-
-
-            <ul class="pagination">
-
-
-                <?php
-                if (function_exists("pagination")) {
-                    pagination($wp_query->max_num_pages);
-                }
-                ?>
-
-
-            </ul>
+            <?php
+            if (function_exists("pagination")) {
+                pagination($wp_query->max_num_pages);
+            }
+            ?>
         </div>
+
+
+
 
 
         <!-- cta -->
