@@ -46,7 +46,7 @@
                     <dd class="worksSec__list-dd">
                         <ul>
                             <li>
-                                <?php echo esc_html(get_the_content()); ?>
+                            <?php the_content(); ?>
                             </li>
                         </ul>
                     </dd>
