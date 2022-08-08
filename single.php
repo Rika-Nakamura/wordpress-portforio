@@ -16,7 +16,7 @@
                 <!-- スライドショー -->
                 <div class="worksSec__slideshow">
                     <div class="slide">
-                        <img id="slide_img" src="<?php echo esc_url(get_theme_file_uri('img/works/item1-slide-1.png')); ?>" alt="">
+                        <img id="slide_img" src="<?php the_post_thumbnail_url('full'); ?>" alt="">
                     </div>
                     <div class="toolbar">
                         <div id="prev" class="button">
