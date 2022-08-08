@@ -33,15 +33,15 @@
                 <p class="worksSec__lead">ポートフォリオサイト(このサイトです)</p>
                 <dl class="worksSec__list">
                     <dt class="worksSec__dt">URL</dt>
-                    <dd class="worksSec__list-dd"><?php echo esc_html(get_post_meta(get_the_ID(), 'url', true)); ?><a href="https://rika-nakamura.github.io/digsmile/" class="link">https://rika-nakamura.github.io/digsmile/</a></dd>
+                    <dd class="worksSec__list-dd"><?php echo esc_html(get_post_meta(get_the_ID(), 'url', true)); ?></dd>
                     <dt class="worksSec__list-dt">主な特徴</dt>
-                    <dd class="worksSec__list-dd"><?php echo esc_html(get_post_meta(get_the_ID(), 'feature', true)); ?>複数ページ型 /ハンバーガーメニュー / スライドショー / アコーディオン / フェードイン / スムースクロール</dd>
+                    <dd class="worksSec__list-dd"><?php echo esc_html(get_post_meta(get_the_ID(), 'feature', true)); ?></dd>
                     <dt class="worksSec__list-dt">制作範囲</dt>
-                    <dd class="worksSec__list-dd"><?php echo esc_html(get_post_meta(get_the_ID(), 'range', true)); ?>デザイン・コーディング・スマホ対応・WordPress対応・ロゴやアイコン作成</dd>
+                    <dd class="worksSec__list-dd"><?php echo esc_html(get_post_meta(get_the_ID(), 'range', true)); ?></dd>
                     <dt class="worksSec__list-dt">使用言語/ツール</dt>
-                    <dd class="worksSec__list-dd"><?php echo esc_html(get_post_meta(get_the_ID(), 'tool', true)); ?>HTML / CSS / JavaScript / jQuery / Figma </dd>
+                    <dd class="worksSec__list-dd"><?php echo esc_html(get_post_meta(get_the_ID(), 'tool', true)); ?> </dd>
                     <dt class="worksSec__list-dt">制作期間</dt>
-                    <dd class="worksSec__list-dd"><?php echo esc_html(get_post_meta(get_the_ID(), 'period', true)); ?>3週間</dd>
+                    <dd class="worksSec__list-dd"><?php echo esc_html(get_post_meta(get_the_ID(), 'period', true)); ?></dd>
                     <dt class="worksSec__list-dt">作成のポイント</dt>
                     <dd class="worksSec__list-dd">
                         <ul>
