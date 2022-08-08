@@ -91,6 +91,7 @@ function pagination($pages = '', $range = 2)
     echo '</ul>';
     echo '</div>';
   }
+}
 
 
   /**************************************************
@@ -112,4 +113,4 @@ add_action( 'template_redirect', 'cf7_limitation' );
 
 
 
-}
+
