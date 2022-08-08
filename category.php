@@ -12,7 +12,7 @@
 
                 <?php
                 $args = array(
-                    'posts_per_page' => 9
+                    'posts_per_page' => 20
                 );
                 ?>
                 <?php $posts = get_posts($args); ?>
