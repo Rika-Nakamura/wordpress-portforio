@@ -30,7 +30,7 @@
                     <a href=""></a>
 
                 </div>
-                <p class="worksSec__lead">ポートフォリオサイト(このサイトです)</p>
+                <p class="worksSec__lead"><?php the_title(); ?></p>
                 <dl class="worksSec__list">
                     <dt class="worksSec__dt">URL</dt>
                     <dd class="worksSec__list-dd"><?php echo esc_html(get_post_meta(get_the_ID(), 'url', true)); ?></dd>
