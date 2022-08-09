@@ -16,7 +16,8 @@
                 <!-- スライドショー -->
                 <div class="worksSec__slideshow">
                     <div class="slide">
-                        <img id="slide_img" src="<?php the_post_thumbnail_url('full'); ?>" alt="">
+                       <?php the_content(); ?>
+                        <!-- <img id="slide_img" src="<?php the_content(); ?>" alt=""> -->
                     </div>
                     <div class="toolbar">
                         <div id="prev" class="button">
@@ -43,10 +44,10 @@
                     <dt class="worksSec__list-dt">制作期間</dt>
                     <dd class="worksSec__list-dd"><?php echo esc_html(get_post_meta(get_the_ID(), 'period', true)); ?></dd>
                     <dt class="worksSec__list-dt">作成のポイント</dt>
-                    <dd class="worksSec__list-dd">
+                    <dd class="worksSec__list-dd"><?php echo esc_html(get_post_meta(get_the_ID(), 'point', true)); ?></dd>
                         <ul>
                             <li>
-                            <?php the_content(); ?>
+                            
                             </li>
                         </ul>
                     </dd>
