@@ -158,16 +158,21 @@ worksSec
 ----------------------------*/
 
         .slick-next {
-            right: 15px;
+            right: 20px;
+            z-index: 10;
+
+            &::before {
+                color: red;
+            }
         }
 
         .slick-prev {
             left: 10px;
             z-index: 10;
-        }
 
-        button {
-            color: red;
+            &::before {
+                color: red;
+            }
         }
 
     }
