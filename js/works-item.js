@@ -35,14 +35,18 @@
 
 
   /* スライドショー */
- 
 
-  jQuery(function () {
-    jQuery('.slider').slick({
+
+  jQuery(document).on('ready', function() {
+
+    jQuery(function () {
+      jQuery('.slider').slick({
         dots: true,
         autoplay: false
       });
     });
+
+  });
 
 
 

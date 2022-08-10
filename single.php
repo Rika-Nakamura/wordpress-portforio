@@ -11,29 +11,55 @@
                 $cat = get_the_category();
                 $catname = $cat[0]->cat_name;
                 ?>
+
                 <h2 class="section__title">works</h2>
 
                 <!-- スライドショー -->
                 <div class="worksSec__slideshow">
                     <div class="slider">
-                        <div>
-                            <!-- <img src="img/works/item1-slide-1.png" alt="スライド画像01"> -->
-                            <img src="<?php echo esc_url(get_theme_file_uri('img/works/item1-slide-1.png')); ?>" alt="ヘッダーロゴ">
-                        </div>
-                        <div>
-                            <!-- <img src="img/works/item1-slide-2 .png" alt="スライド画像02"> -->
-                            <img src="<?php echo esc_url(get_theme_file_uri('img/works/item2-slide-2.png')); ?>" alt="ヘッダーロゴ">
 
-                        </div>
-                        <div>
-                            <!-- <img src="img/works/item1-slide-3.png" alt="スライド画像03"> -->
-                            <img src="<?php echo esc_url(get_theme_file_uri('img/works/item1-slide-3.png')); ?>" alt="ヘッダーロゴ">
+                    <?php
+                        /* カスタムフィールドに値があるかチェック */
+                        $wp_slick_flg = get_post_meta($id, 'wp_slick_img', true);
 
-                        </div>
+                        /* カスタムフィールドに値がある場合、slickの処理を行う */
+                        if ($wp_slick_flg) {
+
+                            /* ラッパーのクラスはJSで指定したものを使ってください */
+                            $output_wp_slick = '<div class="slider">';
+                            
+                            /* slickに使うスマートカスタムフィールドの値を取得 */
+                            $wp_slick_grp = SCF::get('wp_slick_grp');
+
+                            /* 取得した値をループ */
+                            foreach ($wp_slick_grp as $wp_slick) {
+
+                                /* スマートカスタムフィールドの画像タイプはアタッチメントIDが入っています。 */
+                                $wp_slick_img_id = $wp_slick['wp_slick_img'];
+
+                                /* アタッチメントIDから画像のURLを取得 */
+                                $wp_slick_img_url = wp_get_attachment_url($wp_slick_img_id);
+
+                                /* 同じくアタッチメントIDから代替テキストを取得 */
+                                $wp_slick_img_alt = get_post_meta($wp_slick_img_id, '_wp_attachment_image_alt', true);
+
+                                /* URLと代替テキストを出力用の変数へ代入 */
+                                $output_wp_slick .= '<div><img src="' . $wp_slick_img_url . '" alt="' . $wp_slick_img_alt . '"></div>';
+                            }
+                           
+
+                            /* ラッパーを閉じます */
+                            $output_wp_slick .= '</section><!-- /.wp-slick -->';
+
+                            /* slickを出力 */
+                            echo $output_wp_slick;
+                        }
+                         ?>
+                      
                     </div>
                     <!-- //スライドショー -->
-
-
+                   
+                   
 
                 </div>
                 <p class="worksSec__lead"><?php the_title(); ?></p>
@@ -58,6 +84,8 @@
                     </dd>
                 </dl>
                 <div class="btn worksSec__btn"><a href="<?php echo esc_url(home_url('/category/works/')); ?>">戻る</a></div>
+
+               
 
         <?php endwhile;
         endif; ?>
