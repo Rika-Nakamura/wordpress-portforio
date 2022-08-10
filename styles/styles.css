@@ -1502,14 +1502,19 @@ worksSec
   z-index: 10;
 }
 .worksSec .slider .slick-next::before {
-  color: red;
+  color: #FFA353;
+  font-size: 30px;
 }
 .worksSec .slider .slick-prev {
   left: 10px;
   z-index: 10;
 }
 .worksSec .slider .slick-prev::before {
-  color: red;
+  color: #FFA353;
+  font-size: 30px;
+}
+.worksSec .slider .slick-dots li .button:before {
+  color: #FFA353;
 }
 .worksSec .worksSec__lead {
   font-weight: bold;

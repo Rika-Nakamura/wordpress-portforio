@@ -163,7 +163,8 @@ worksSec
             z-index: 10;
 
             &::before {
-                color: red;
+                color: #FFA353;
+                font-size: 30px;
             }
         }
 
@@ -172,7 +173,16 @@ worksSec
             z-index: 10;
 
             &::before {
-                color: red;
+                color: #FFA353;
+                font-size: 30px;
+            }
+        }
+
+        .slick-dots {
+            li {
+                .button:before {
+                    color: #FFA353;
+                }
             }
         }
 
