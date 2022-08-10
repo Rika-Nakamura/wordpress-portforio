@@ -22,7 +22,7 @@
                     </div>
                     <div>
                         <!-- <img src="img/works/item1-slide-2 .png" alt="スライド画像02"> -->
-                        <img src="<?php echo esc_url(get_theme_file_uri('img/works/item1-slide-2.png')); ?>" alt="ヘッダーロゴ">
+                        <img src="<?php echo esc_url(get_theme_file_uri('img/works/item2-slide-2.png')); ?>" alt="ヘッダーロゴ">
 
                     </div>
                     <div>
