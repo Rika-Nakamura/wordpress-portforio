@@ -161,7 +161,6 @@ worksSec
         .slick-next {
             right: 20px;
             z-index: 10;
-            opacity: 1;
 
             &::before {
                 color: #FFA353;
@@ -172,7 +171,6 @@ worksSec
         .slick-prev {
             left: 10px;
             z-index: 10;
-            opacity: 1;
 
             &::before {
                 color: #FFA353;
@@ -181,8 +179,8 @@ worksSec
         }
 
         .slick-dots {
-            li {
-                .button
+            .slick-active {
+                button
                     &::before {
                     color: #FFA353;
                 }

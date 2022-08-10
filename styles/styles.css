@@ -1513,7 +1513,7 @@ worksSec
   color: #FFA353;
   font-size: 30px;
 }
-.worksSec .slider .slick-dots li .button:before {
+button .worksSec .slider .slick-dots .slick-active::before {
   color: #FFA353;
 }
 .worksSec .worksSec__lead {
