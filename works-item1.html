@@ -115,11 +115,17 @@
         <small>&copy;2022 Rika Nakamura</small>
     </footer>
     <!-- //footer -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- <script src="js/works-item.js"></script> -->
 
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="js/works-item.js"></script>
+    <script>
+        $(function() {
+            $(".worksSec h2").on("click", function(){
+                //ここに処理の中身を書く
+                alert("クリックされたよ！");
+            });
+        });
+    </script>
 
 </body>
 
