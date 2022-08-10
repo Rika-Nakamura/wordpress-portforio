@@ -16,20 +16,24 @@
                 <!-- スライドショー -->
                 <div class="worksSec__slideshow">
                     <div class="slider">
-                        <div>
-                            <img src="img/works/item1-slide-1.png" alt="スライド画像01">
-                        </div>
-                        <div>
-                            <img src="img/works/item1-slide-2 .png" alt="スライド画像02">
-                        </div>
-                        <div>
-                            <img src="img/works/item1-slide-3.png" alt="スライド画像03">
+                    <div>
+                        <!-- <img src="img/works/item1-slide-1.png" alt="スライド画像01"> -->
+                        <img src="<?php echo esc_url(get_theme_file_uri('img/works/item1-slide-1.png')); ?>" alt="ヘッダーロゴ">
+                    </div>
+                    <div>
+                        <!-- <img src="img/works/item1-slide-2 .png" alt="スライド画像02"> -->
+                        <img src="<?php echo esc_url(get_theme_file_uri('img/works/item1-slide-2.png')); ?>" alt="ヘッダーロゴ">
 
-                        </div>
+                    </div>
+                    <div>
+                        <!-- <img src="img/works/item1-slide-3.png" alt="スライド画像03"> -->
+                        <img src="<?php echo esc_url(get_theme_file_uri('img/works/item1-slide-3.png')); ?>" alt="ヘッダーロゴ">
+
+                    </div>
                     </div>
                     <!-- //スライドショー -->
 
-                    <a href=""></a>
+                
 
                 </div>
                 <p class="worksSec__lead"><?php the_title(); ?></p>
