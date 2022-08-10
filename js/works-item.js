@@ -34,16 +34,17 @@
   });
 
 
-   /* スライドショー */
-   
+  /* スライドショー */
+  $(document).on('ready', function () {
 
-    $(function() {
+    $(function () {
       $('.slider').slick({
         dots: true,
         autoplay: false
       });
-  });
+    });
 
+  });
 
 
 
