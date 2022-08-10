@@ -15,15 +15,16 @@
 
                 <!-- スライドショー -->
                 <div class="worksSec__slideshow">
-                    <div class="slide">
-                       <?php the_content(); ?>
-                        <!-- <img id="slide_img" src="<?php the_content(); ?>" alt=""> -->
-                    </div>
-                    <div class="toolbar">
-                        <div id="prev" class="button">
-                            < </div>
-                                <div id="page"></div>
-                                <div id="next" class="button">></div>
+                    <div class="slider">
+                        <div>
+                            <img src="img/works/item1-slide-1.png" alt="スライド画像01">
+                        </div>
+                        <div>
+                            <img src="img/works/item1-slide-2 .png" alt="スライド画像02">
+                        </div>
+                        <div>
+                            <img src="img/works/item1-slide-3.png" alt="スライド画像03">
+
                         </div>
                     </div>
                     <!-- //スライドショー -->
@@ -45,11 +46,11 @@
                     <dd class="worksSec__list-dd"><?php echo esc_html(get_post_meta(get_the_ID(), 'period', true)); ?></dd>
                     <dt class="worksSec__list-dt">作成のポイント</dt>
                     <dd class="worksSec__list-dd"><?php echo esc_html(get_post_meta(get_the_ID(), 'point', true)); ?></dd>
-                        <ul>
-                            <li>
-                            
-                            </li>
-                        </ul>
+                    <ul>
+                        <li>
+
+                        </li>
+                    </ul>
                     </dd>
                 </dl>
                 <div class="btn worksSec__btn"><a href="<?php echo esc_url(home_url('/category/works/')); ?>">戻る</a></div>
