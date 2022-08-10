@@ -1479,12 +1479,21 @@ worksSec
   margin: 0 auto;
   padding-bottom: 80px;
 }
-.worksSec .slide {
+.worksSec .slider {
   max-width: 632px;
   height: auto;
   margin-bottom: 10px;
+  visibility: hidden;
+  /*-----------------------------
+
+  スライドショー(jQuery)
+
+  ----------------------------*/
 }
-.worksSec .slide img {
+.worksSec .slider .slick-initialized {
+  visibility: visible;
+}
+.worksSec .slider img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -1492,30 +1501,19 @@ worksSec
   -o-object-position: center center;
      object-position: center center;
 }
-.worksSec .toolbar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.worksSec .slider .slick-next {
+  right: 20px;
+  z-index: 10;
 }
-.worksSec #page {
-  margin: 0 10px;
-  font-size: 20px;
-  font-weight: bold;
+.worksSec .slider .slick-next::before {
+  color: red;
 }
-.worksSec .button {
-  width: 48px;
-  height: 48px;
-  text-align: center;
-  line-height: 48px;
-  border-radius: 50%;
-  font-size: 30px;
-  font-weight: bold;
-  background-color: #F0EDE6;
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+.worksSec .slider .slick-prev {
+  left: 10px;
+  z-index: 10;
+}
+.worksSec .slider .slick-prev::before {
+  color: red;
 }
 .worksSec .worksSec__lead {
   font-weight: bold;

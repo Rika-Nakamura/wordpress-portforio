@@ -143,6 +143,11 @@ worksSec
         max-width: 632px;
         height: auto;
         margin-bottom: 10px;
+        visibility: hidden;
+
+        .slick-initialized {
+            visibility: visible;
+        }
 
         img {
             width: 100%;
