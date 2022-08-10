@@ -11,6 +11,124 @@ worksSec
 
 ----------------------------*/
 
+// .worksSec {
+//     max-width: 672px;
+//     margin: 0 auto;
+//     padding-bottom: 80px;
+
+
+
+
+
+//     // スライドショー
+//     .slide {
+//         max-width: 632px;
+//         height: auto;
+//         margin-bottom: 10px;
+
+//         img {
+//             width: 100%;
+//             height: 100%;
+//             object-fit: cover;
+//             object-position: center center;
+//         }
+//     }
+
+//     // ツールバー
+//     .toolbar {
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//     }
+
+//     // ページ数
+//     #page {
+//         margin: 0 10px;
+//         font-size: 20px;
+//         font-weight: bold;
+//     }
+
+//     // ボタン
+//     .button {
+//         width: 48px;
+//         height: 48px;
+//         text-align: center;
+//         line-height: 48px;
+//         border-radius: 50%;
+//         font-size: 30px;
+//         font-weight: bold;
+//         background-color: #F0EDE6;
+//         cursor: pointer;
+//         user-select: none;
+//     }
+
+
+
+
+//     .worksSec__lead {
+//         font-weight: bold;
+//         text-align: center;
+//         margin-bottom: 70px;
+//         margin-top: 40px;
+//     }
+
+//     .worksSec__list {
+//         width: 100%;
+//         display: flex;
+//         flex-wrap: wrap;
+
+//         dt {
+//             width: 30%;
+//             padding: 16px;
+//             border-bottom: 1px dashed #333333;
+//             font-weight: bold;
+//         }
+
+//         dd {
+//             width: 70%;
+//             padding: 16px;
+//             border-bottom: 1px dashed #333333;
+
+//             li {
+//                 margin-bottom: 20px;
+//             }
+//         }
+//     }
+
+//     .btn {
+//         text-align: center;
+//         margin-top: 32px;
+
+//         a {
+//             display: inline-block;
+//             width: 304px;
+//             height: 80px;
+//             font-size: 2rem;
+//             padding-top: 26px;
+//             color: #fff;
+//             background-color: g.$sub-color;
+//             text-align: center;
+//             border-radius: 5px;
+//             margin: 0 auto;
+
+//             &:hover {
+//                 background-color: #fff;
+//                 color: g.$sub-color;
+//                 border: 3px solid g.$sub-color;
+//                 transition: .5s;
+//             }
+//         }
+//     }
+
+
+//     .worksSec__btn {
+//         margin-top: 80px;
+//     }
+
+
+
+// }
+
 .worksSec {
     max-width: 672px;
     margin: 0 auto;
@@ -21,10 +139,11 @@ worksSec
 
 
     // スライドショー
-    .slide {
+    .slider {
         max-width: 632px;
         height: auto;
         margin-bottom: 10px;
+     
 
         img {
             width: 100%;
@@ -32,34 +151,31 @@ worksSec
             object-fit: cover;
             object-position: center center;
         }
-    }
 
-    // ツールバー
-    .toolbar {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+        /*-----------------------------
 
-    // ページ数
-    #page {
-        margin: 0 10px;
-        font-size: 20px;
-        font-weight: bold;
-    }
+スライドショー(jQuery)
 
-    // ボタン
-    .button {
-        width: 48px;
-        height: 48px;
-        text-align: center;
-        line-height: 48px;
-        border-radius: 50%;
-        font-size: 30px;
-        font-weight: bold;
-        background-color: #F0EDE6;
-        cursor: pointer;
-        user-select: none;
+----------------------------*/
+
+        .slick-next {
+            right: 20px;
+            z-index: 10;
+
+            &::before {
+                color: red;
+            }
+        }
+
+        .slick-prev {
+            left: 10px;
+            z-index: 10;
+
+            &::before {
+                color: red;
+            }
+        }
+
     }
 
 
@@ -98,7 +214,7 @@ worksSec
     .btn {
         text-align: center;
         margin-top: 32px;
-    
+
         a {
             display: inline-block;
             width: 304px;
@@ -110,7 +226,7 @@ worksSec
             text-align: center;
             border-radius: 5px;
             margin: 0 auto;
-    
+
             &:hover {
                 background-color: #fff;
                 color: g.$sub-color;
@@ -119,15 +235,17 @@ worksSec
             }
         }
     }
-    
+
 
     .worksSec__btn {
         margin-top: 80px;
     }
 
 
-    
+
 }
+
+
 
 /*-----------------------------
 
@@ -158,50 +276,50 @@ sp-workSec
 
 ----------------------------*/
 
-.worksSec {
+    .worksSec {
 
 
 
-    .worksSec__lead {
-        margin-bottom: 40px;
-        margin-top: 40px;
-    }
-
-    .worksSec__list {
-        font-size: 1.2rem;
-
-        dt {
-            width: 30%;
-            padding: 16px;
-            border-bottom: 1px dotted #333333;
+        .worksSec__lead {
+            margin-bottom: 40px;
+            margin-top: 40px;
         }
 
-        dd {
-            width: 70%;
-            padding: 16px;
-            border-bottom: 1px dotted #333333;
+        .worksSec__list {
+            font-size: 1.2rem;
 
-            li {
-                margin-bottom: 10px;
+            dt {
+                width: 30%;
+                padding: 16px;
+                border-bottom: 1px dotted #333333;
             }
 
+            dd {
+                width: 70%;
+                padding: 16px;
+                border-bottom: 1px dotted #333333;
+
+                li {
+                    margin-bottom: 10px;
+                }
+
+            }
         }
-    }
 
 
 
-    .worksSec__btn {
-        margin-top: 80px;
-    }
-
-    .btn {
-
-        a {
-            font-size: 1.6rem;
+        .worksSec__btn {
+            margin-top: 80px;
         }
+
+        .btn {
+
+            a {
+                font-size: 1.6rem;
+            }
+        }
+
+
     }
-
-
-}
 
 }
