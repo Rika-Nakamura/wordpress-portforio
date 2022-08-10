@@ -37,7 +37,6 @@
   /* スライドショー */
 
 
-  jQuery(document).on('ready', function() {
 
     jQuery(function () {
       jQuery('.slider').slick({
@@ -46,7 +45,7 @@
       });
     });
 
-  });
+
 
 
 
