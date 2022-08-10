@@ -1483,11 +1483,15 @@ worksSec
   max-width: 632px;
   height: auto;
   margin-bottom: 40px;
+  visibility: hidden;
   /*-----------------------------
 
   スライドショー(jQuery)
 
   ----------------------------*/
+}
+.worksSec .slider.slick-initialized {
+  visibility: visible;
 }
 .worksSec .slider img {
   width: 100%;
