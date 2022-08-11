@@ -29,11 +29,13 @@ header
     .header__nav_list {
         display: flex;
 
+
         .header__nav_item {
             margin-left: 32px;
            
 
             .header__nav_link {
+                color: #fff;
                 
                 position: relative;
                 display: inline-block;
