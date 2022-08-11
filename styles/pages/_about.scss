@@ -83,7 +83,7 @@ aboutSec
 
     .accordion__title::after {
         transform: rotate(90deg);
-        transition-duration: .3s;
+        transition-duration: .6s;
     }
 
     .accordion__title:hover,
@@ -108,7 +108,7 @@ aboutSec
         height: 0;
         overflow: hidden;
         opacity: 0;
-        transition-duration: .3s;
+        transition-duration: .6s;
     }
 
     .accordion__content.is-open {

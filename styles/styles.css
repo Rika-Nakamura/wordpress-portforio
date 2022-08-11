@@ -634,6 +634,7 @@ dt {
   position: relative;
   text-decoration: none;
   border-radius: 10px;
+  color: #fff;
 }
 .common-btn .btn-wrap .btn-inner a:hover {
   color: #fff;
@@ -1125,7 +1126,7 @@ aboutSec
 }
 .aboutSec .accordion__title::after {
   transform: rotate(90deg);
-  transition-duration: 0.3s;
+  transition-duration: 0.6s;
 }
 .aboutSec .accordion__title:hover,
 .aboutSec .accordion__title:active,
@@ -1146,7 +1147,7 @@ aboutSec
   height: 0;
   overflow: hidden;
   opacity: 0;
-  transition-duration: 0.3s;
+  transition-duration: 0.6s;
 }
 .aboutSec .accordion__content.is-open {
   background-color: #F0EDE6;
@@ -1478,7 +1479,7 @@ worksSec
 .worksSec {
   max-width: 672px;
   margin: 0 auto;
-  padding-bottom: 80px;
+  padding-bottom: 40px;
 }
 .worksSec .slider {
   max-width: 632px;
@@ -1526,7 +1527,6 @@ button .worksSec .slider .slick-dots .slick-active::before {
   font-weight: bold;
   text-align: center;
   margin-bottom: 70px;
-  margin-top: 50px;
 }
 
 .worksSec__list {
@@ -1624,6 +1624,9 @@ ctaSec
 pagination
 
 ----------------------------*/
+.pagination {
+  margin-bottom: 80px;
+}
 .pagination ul {
   display: flex;
   flex-wrap: wrap;
@@ -1631,6 +1634,9 @@ pagination
 }
 .pagination ul li {
   padding: 0 10px;
+}
+.pagination ul li a {
+  color: #0000ee;
 }
 
 /*-----------------------------
