@@ -117,7 +117,7 @@
             </figure>
             <figure class="skillsSec__right">
                 <img class="only-PC" src="<?php echo esc_url(get_theme_file_uri('img/about/design.png')); ?>" alt="Figmaのロゴの画像">
-                <img class="only-SP" src="img/about/design-sp.png" alt="Figmaのロゴの画像">
+                <img class="only-SP" src="<?php echo esc_url(get_theme_file_uri('img/about/design-sp.png')); ?>" alt="Figmaのロゴの画像">
                 <figcaption>
                     <h3>Figma/XD/photoshop/illustrator</h3>
                     <p>Figmaを用いて、オリジナルポートフォリオを作成しました。photoshopを用いてバナーや名刺の作成も可能です。Illustratorは、現在勉強中ですが基本的な機能は問題なく使用できます。

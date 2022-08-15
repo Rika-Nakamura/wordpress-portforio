@@ -1494,6 +1494,9 @@ worksSec
 .worksSec .slider.slick-initialized {
   visibility: visible;
 }
+.worksSec .slider.slick-initialized .slick-dots {
+  display: none;
+}
 .worksSec .slider img {
   width: 100%;
   height: 100%;

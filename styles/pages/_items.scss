@@ -146,6 +146,10 @@ worksSec
 
         &.slick-initialized {
             visibility: visible;
+
+            .slick-dots {
+                display: none;
+            }
         }
         
      
