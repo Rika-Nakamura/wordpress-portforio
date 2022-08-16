@@ -31,7 +31,7 @@
             <?php foreach ($posts as $post) : ?>
                 <?php setup_postdata($post); ?>
                 <li class="workSec__item">
-                    <a href="<?php the_permalink(); ?>">
+                    <a class="works-photo" href="<?php the_permalink(); ?>">
                         <?php the_post_thumbnail(); ?>
                     </a>
                 </li>
