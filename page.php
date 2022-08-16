@@ -109,7 +109,7 @@
                 <img class="only-PC" src="<?php echo esc_url(get_theme_file_uri('img/about/coding.png')); ?>" alt="PCの画像">
                 <img class="only-SP" src="<?php echo esc_url(get_theme_file_uri('img/about/coding-sp.png')); ?>" alt="PCの画像">
                 <figcaption>
-                    <h3>HTML/css/sass/jQuery/JavaScript/<br>WordPress/CSS設計/Git</h3>
+                    <h3>HTML/css/sass/jQuery/<br class="only-SP">JavaScript/<br class="only-PC">WordPress/CSS設計/Git</h3>
                     <p>レスポンシブデザイン、Sassの記述が可能です。jQueryやJavaScriptを用いてサイトに動きを付けることも可能です。静的サイトにWordPressを組み込みました。
                         後に管理・更新がしやすいようなコーディングを心掛けるため、Sassの記述やCSS設計も取り入れています。
                     </p>
@@ -119,7 +119,7 @@
                 <img class="only-PC" src="<?php echo esc_url(get_theme_file_uri('img/about/design.png')); ?>" alt="Figmaのロゴの画像">
                 <img class="only-SP" src="<?php echo esc_url(get_theme_file_uri('img/about/design-sp.png')); ?>" alt="Figmaのロゴの画像">
                 <figcaption>
-                    <h3>Figma/XD/photoshop/illustrator</h3>
+                    <h3>Figma/XD/photoshop/<br class="only-SP">illustrator</h3>
                     <p>Figmaを用いて、オリジナルポートフォリオを作成しました。photoshopを用いてバナーや名刺の作成も可能です。Illustratorは、現在勉強中ですが基本的な機能は問題なく使用できます。
                     </p>
                 </figcaption>
