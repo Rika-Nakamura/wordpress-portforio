@@ -860,7 +860,7 @@ header
     transform: translate(-50%, -50%);
     text-align: center;
   }
-  .header__nav_item {
+  .header__nav_list .header__nav_item {
     margin-left: 0;
     margin-bottom: 40px;
   }

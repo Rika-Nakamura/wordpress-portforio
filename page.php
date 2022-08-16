@@ -134,7 +134,7 @@
     <!-- fortSec -->
     <section class="fortSec section-underlayer bg-bro">
         <div class="wrapper">
-            <h2 class="section__title">forte</h2>
+            <h2 class="section__title">skills in works</h2>
 
             <!-- タブメニュー -->
             <ul>

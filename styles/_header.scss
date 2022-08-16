@@ -192,12 +192,14 @@ header
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
+
+        .header__nav_item {
+            margin-left: 0;
+            margin-bottom: 40px;
+        }
     }
 
-    .header__nav_item {
-        margin-left: 0;
-        margin-bottom: 40px;
-    }
+    
 
     .nav-item {
         margin-right: 0;
