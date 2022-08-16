@@ -787,7 +787,7 @@ header
   .header {
     background-color: #FFA353;
     color: #fff;
-    height: 74px;
+    height: 50px;
     padding: 0 20px;
     display: flex;
     justify-content: space-between;
