@@ -148,7 +148,7 @@
                 <p class="panel__details">デザインカンプからのコーディングが可能です。Figma/XD/photoshop/illustratorのソフトを使用してコーディングができます。
                 </p>
                 <p class="panel__details">
-                    JavaScriptを用いてサイトに動きを付けたり、wordpress化をして更新しやすいサイト作成が可能です。CSS設計のBEM手法を用いて、管理しやすいサイト作りを心掛けています。何より、コーディングをすることが好きです。
+                    JavaScriptを用いてサイトに動きを付けたり、WordPress化をして更新しやすいサイト作成が可能です。CSS設計のBEM手法を用いて、管理しやすいサイト作りを心掛けています。何より、コーディングをすることが好きです。
                 </p>
             </div>
             <div class="panel">
