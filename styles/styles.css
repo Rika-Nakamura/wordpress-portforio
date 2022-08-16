@@ -608,10 +608,6 @@ dt {
   .btn a {
     font-size: 1.6rem;
   }
-  .works-photo {
-    border-radius: 10px;
-    border: 1px solid #d9d9d9;
-  }
 }
 .common-btn {
   margin-top: 72px;
