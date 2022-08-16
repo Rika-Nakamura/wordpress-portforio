@@ -109,8 +109,8 @@
                 <img class="only-PC" src="<?php echo esc_url(get_theme_file_uri('img/about/coding.png')); ?>" alt="PCの画像">
                 <img class="only-SP" src="<?php echo esc_url(get_theme_file_uri('img/about/coding-sp.png')); ?>" alt="PCの画像">
                 <figcaption>
-                    <h3>HTML/css/sass/jQuery/JavaScript/<br>wordpress/CSS設計/Git</h3>
-                    <p>レスポンシブデザイン、Sassの記述が可能です。jQueryやJavaScriptを用いてサイトに動きを付けることも可能です。静的サイトにWordpressを組み込みました。
+                    <h3>HTML/css/sass/jQuery/JavaScript/<br>WordPress/CSS設計/Git</h3>
+                    <p>レスポンシブデザイン、Sassの記述が可能です。jQueryやJavaScriptを用いてサイトに動きを付けることも可能です。静的サイトにWordPressを組み込みました。
                         後に管理・更新がしやすいようなコーディングを心掛けるため、Sassの記述やCSS設計も取り入れています。
                     </p>
                 </figcaption>
