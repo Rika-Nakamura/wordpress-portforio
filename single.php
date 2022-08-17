@@ -65,7 +65,9 @@
                 <p class="worksSec__lead"><?php the_title(); ?></p>
                 <dl class="worksSec__list worksSec wrapper">
                     <dt class="worksSec__dt">URL</dt>
-                    <dd class="worksSec__list-dd"><?php echo esc_html(get_post_meta(get_the_ID(), 'url', true)); ?></dd>
+                    <dd class="worksSec__list-dd"><a href="<?php echo esc_html(get_post_meta(get_the_ID(), 'url', true)); ?>"><?php echo esc_html(get_post_meta(get_the_ID(), 'url', true)); ?></a></dd>
+
+                    <!-- <dd class="worksSec__list-dd"><?php echo esc_html(get_post_meta(get_the_ID(), 'url', true)); ?></dd> -->
                     <dt class="worksSec__list-dt">主な特徴</dt>
                     <dd class="worksSec__list-dd"><?php echo esc_html(get_post_meta(get_the_ID(), 'feature', true)); ?></dd>
                     <dt class="worksSec__list-dt">制作範囲</dt>
