@@ -41,11 +41,11 @@
 
   /* ハンバーガーメニュー */
 
-  $(function () {
-    $('.burger-btn').on('click', function () {
-      $('.burger-btn').toggleClass('close');
-      $('.nav-wrapper').toggleClass('fade');
-      $('body').toggleClass('noscroll');
+  jQuery(function () {
+    jQuery('.burger-btn').on('click', function () {
+      jQuery('.burger-btn').toggleClass('close');
+      jQuery('.nav-wrapper').toggleClass('fade');
+      jQuery('body').toggleClass('noscroll');
     });
   });
 

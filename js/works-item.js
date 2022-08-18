@@ -3,24 +3,24 @@
 {
 
 
-  /* worksページタブ機能 */
-  const tabs = document.getElementsByClassName('tab');
+  // /* worksページタブ機能 */
+  // const tabs = document.getElementsByClassName('tab');
 
-  for (let i = 0; i < tabs.length; i++) {
-    tabs[i].addEventListener('click', tabSwitch);
-  }
-  // タブをクリックすると実行する関数
-  function tabSwitch() {
-    // .tabを名付けた要素のクラスを付け替える処理
-    document.getElementsByClassName('active')[0].classList.remove('active');
-    this.classList.add('active');
+  // for (let i = 0; i < tabs.length; i++) {
+  //   tabs[i].addEventListener('click', tabSwitch);
+  // }
+  // // タブをクリックすると実行する関数
+  // function tabSwitch() {
+  //   // .tabを名付けた要素のクラスを付け替える処理
+  //   document.getElementsByClassName('active')[0].classList.remove('active');
+  //   this.classList.add('active');
 
-    // コンテンツのclassの値を変更
-    document.getElementsByClassName('show')[0].classList.remove('show');
-    const arrayTabs = Array.prototype.slice.call(tabs);
-    const index = arrayTabs.indexOf(this);
-    document.getElementsByClassName('panel')[index].classList.add('show');
-  };
+  //   // コンテンツのclassの値を変更
+  //   document.getElementsByClassName('show')[0].classList.remove('show');
+  //   const arrayTabs = Array.prototype.slice.call(tabs);
+  //   const index = arrayTabs.indexOf(this);
+  //   document.getElementsByClassName('panel')[index].classList.add('show');
+  // };
 
 
   /* ハンバーガーメニュー */
@@ -36,22 +36,12 @@
 
   /* スライドショー */
 
-
-
     jQuery(function () {
       jQuery('.slider').slick({
         dots: true,
         autoplay: false
       });
     });
-
-
-
-
-
-
-
-
 
 
 
