@@ -27,7 +27,7 @@
         <div class="header__inner wrapper">
             <p class="header__logo">
                 <a href="<?php echo esc_url(home_url()); ?>">
-                    <img src="<?php echo esc_url(get_theme_file_uri('img/Home/logo.png')); ?>" alt="ヘッダーロゴ">
+                    <img src="<?php echo esc_url(get_theme_file_uri('img/home/logo.png')); ?>" alt="ヘッダーロゴ">
                 </a>
             </p>
             <div class="nav-wrapper">

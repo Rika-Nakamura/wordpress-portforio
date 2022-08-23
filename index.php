@@ -6,7 +6,7 @@
     <div class="fv">
         <div class="fv__wrapper">
             <p class="fv__img">
-                <img src="<?php echo esc_url(get_theme_file_uri('img/Home/fv-illust 1.png')); ?>" alt="Rika Nakamuraのイラスト">
+                <img src="<?php echo esc_url(get_theme_file_uri('img/home/fv-illust 1.png')); ?>" alt="Rika Nakamuraのイラスト">
             </p>
             <div class="fv__main-copy">
                 <h1>rikanakamura</h1>
@@ -55,7 +55,7 @@
             <h2 class="section__title">about</h2>
             <div class="aboutSec__inner">
                 <p class="aboutSec__img">
-                    <img src="<?php echo esc_url(get_theme_file_uri('img/Home/about-photo.png')); ?>" alt="中村理香の画像">
+                    <img src="<?php echo esc_url(get_theme_file_uri('img/home/about-photo.png')); ?>" alt="中村理香の画像">
                 <div class="aboutSec__txt">
                     <p>
                         神奈川県に住んでいる27歳です。昔からモノづくりやデザインが好きで、2年前に福祉に関するWebサイトを作成したことから、Web制作に惹かれました。
