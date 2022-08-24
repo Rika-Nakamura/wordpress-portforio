@@ -1,0 +1,85 @@
+// @use '../global/' as g;
+// @use "../base";
+
+@use '../base';
+@use '../component';
+@use '../global' as g;
+@use '../header';
+@use '../footer';
+
+
+
+
+/*--------------------------
+
+contactSec
+
+--------------------------*/
+
+.contactSec {
+
+    padding-bottom: 80px;
+    
+    .contactSec__lead {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+
+
+/*--------------------------
+
+form 
+
+--------------------------*/
+.form {
+    max-width: 632px;
+    margin: 0 auto;
+
+    dt {
+        vertical-align: center;
+        font-weight: 400;
+    }
+
+    dd {
+        margin-bottom: 30px;
+    }
+
+
+    span {
+        display: inline-block;
+        background-color: g.$main-color;
+        color: #fff;
+        font-size: 1.2rem;
+        padding: 0 10px;
+        border-radius: 5px;
+        margin-left: 20px;
+    }
+
+    input[type="name"],
+    input[type="email"],
+    input[type="text"],
+    textarea {
+        border: 1px solid #888888;
+        width: 100%;
+        margin-top: 4px;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .contactSec__btn {
+        text-align: center;
+    }
+
+}
+
+
+
+
+
+@media screen and(max-width:768px) {
+
+
+
+
+}
