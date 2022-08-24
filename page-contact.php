@@ -15,6 +15,8 @@
         <?php endwhile;
         endif; ?>
 
+        <?php echo do_shortcode('[contact-form-7 id="497" title="コンタクトフォーム 1"]'); ?>
+
 
 
 
