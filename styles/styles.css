@@ -1110,7 +1110,6 @@ aboutSec
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 .aboutSec .accordion__title::before,
@@ -1437,18 +1436,18 @@ contactSec
 form 
 
 --------------------------*/
-.form {
+form {
   max-width: 632px;
   margin: 0 auto;
 }
-.form dt {
+form dt {
   vertical-align: center;
   font-weight: 400;
 }
-.form dd {
+form dd {
   margin-bottom: 30px;
 }
-.form span {
+form .required {
   display: inline-block;
   background-color: #FFA353;
   color: #fff;
@@ -1457,17 +1456,17 @@ form
   border-radius: 5px;
   margin-left: 20px;
 }
-.form input[type=name],
-.form input[type=email],
-.form input[type=text],
-.form textarea {
+form input[type=name],
+form input[type=email],
+form input[type=text],
+form textarea {
   border: 1px solid #888888;
   width: 100%;
   margin-top: 4px;
   border-radius: 5px;
   padding: 10px;
 }
-.form .contactSec__btn {
+form .contactSec__btn {
   text-align: center;
 }
 
@@ -1684,4 +1683,5 @@ footer {
 ************************************/
 /************************************
 │　各ページ
-************************************//*# sourceMappingURL=styles.css.map */
+************************************/
+/*# sourceMappingURL=styles.css.map */
