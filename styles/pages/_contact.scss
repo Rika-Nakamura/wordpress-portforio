@@ -32,7 +32,7 @@ contactSec
 form 
 
 --------------------------*/
-.form {
+form {
     max-width: 632px;
     margin: 0 auto;
 
@@ -46,7 +46,7 @@ form
     }
 
 
-    span {
+    .required {
         display: inline-block;
         background-color: g.$main-color;
         color: #fff;

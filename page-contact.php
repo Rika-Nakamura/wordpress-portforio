@@ -1,27 +1,24 @@
 <?php get_header(); ?>
 
 
-    <!-- main -->
-    <main>
+<!-- main -->
+<main>
 
-        <!-- contact -->
+    <!-- contact -->
 
-        <section class="contactSec  adjustment-top wrapper">
-            <h2 class="section__title">contact</h2>
-            <p class="contactSec__lead">ご連絡の際は、<br class="only-SP">こちらのフォームをご利用ください。</p>
+    <section class="contactSec  adjustment-top wrapper">
+        <h2 class="section__title">contact</h2>
+        <p class="contactSec__lead">ご連絡の際は、<br class="only-SP">こちらのフォームをご利用ください。</p>
+        
+        <?php echo do_shortcode( '[contact-form-7 id="489" title="コンタクトフォーム 1"]' ); ?>
+    </section>
+    <!-- //formSec -->
 
-            <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
-  				<?php the_content(); ?>
-			<?php endwhile; endif; ?>
+    <!-- //contact -->
 
-        </section>
-        <!-- //formSec -->
-
-        <!-- //contact -->
-
-        <div id="pagetop"><a href="#"></a></div>
-    </main>
-    <!-- //main -->
+    <div id="pagetop"><a href="#"></a></div>
+</main>
+<!-- //main -->
 
 
-    <?php get_footer(); ?>
+<?php get_footer(); ?>
