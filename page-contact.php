@@ -12,10 +12,12 @@
 
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                 <?php the_content(); ?>
+                <?php echo do_shortcode('[contact-form-7 id="497" title="コンタクトフォーム 1"]'); ?>
+
         <?php endwhile;
         endif; ?>
 
-        <?php echo do_shortcode('[contact-form-7 id="497" title="コンタクトフォーム 1"]'); ?>
+
 
 
 
