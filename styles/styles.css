@@ -685,7 +685,7 @@ dt {
   transition: all 0.3s ease;
 }
 
-.contactSec form .contactSec__btn .btn-submit {
+.submit-btn {
   height: 80px;
   width: 200px;
   font-size: 20px;
@@ -696,11 +696,15 @@ dt {
   margin: 0 auto;
   cursor: pointer;
 }
-.contactSec form .contactSec__btn .btn-submit:hover {
+.submit-btn:hover {
   background-color: #fff;
   color: #7DBDCB;
   border: 3px solid #7DBDCB;
   transition: 0.5s;
+}
+
+.btn-submit {
+  text-align: center;
 }
 
 @media screen and (max-width: 768px) {
