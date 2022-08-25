@@ -685,7 +685,7 @@ dt {
   transition: all 0.3s ease;
 }
 
-.submit-btn {
+.input.wpcf7-submit {
   height: 80px;
   width: 200px;
   font-size: 20px;
@@ -696,7 +696,7 @@ dt {
   margin: 0 auto;
   cursor: pointer;
 }
-.submit-btn:hover {
+.input.wpcf7-submit:hover {
   background-color: #fff;
   color: #7DBDCB;
   border: 3px solid #7DBDCB;
@@ -1346,7 +1346,9 @@ ctaSec
   aboutSec
 
   ----------------------------*/
-
+  .aboutSec .aboutSec__summary {
+    /* アコーディオン */
+  }
   .aboutSec .aboutSec__summary .aboutSec__inner {
     flex-direction: column;
   }
