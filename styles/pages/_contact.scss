@@ -69,6 +69,10 @@ form {
 
     .contactSec__btn {
         text-align: center;
+
+        .wpcf7-spinner {
+            display: none;
+        }
     }
 
 }

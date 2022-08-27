@@ -1477,6 +1477,9 @@ form textarea {
 form .contactSec__btn {
   text-align: center;
 }
+form .contactSec__btn .wpcf7-spinner {
+  display: none;
+}
 
 /*-----------------------------
 
