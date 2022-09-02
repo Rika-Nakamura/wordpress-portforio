@@ -50,7 +50,7 @@
                         <span class="career-summary__text">都内の4年制大学に入学</span>
                     </div>
                     <div class="career-description">
-                        家族社会学を専攻し、女性労働や日本の貧困の根本原因について学びました。
+                        家族社会学を専攻し、女性労働や日本の貧困の根本原因について学びました。また、社会調査士を取得し、データ分析ツールspssを使用してデータ分析をしたり、アンケート調査を行ったりすることが得意です。
                     </div>
                 </li>
                 <li class="career-item">
@@ -88,7 +88,7 @@
                 </li>
                 <li class="career-item">
                     <div class="career-summary">
-                        <span>2022年</span>
+                        <span>現在</span>
                         <span class="icon-24"><img src="<?php echo esc_url(get_theme_file_uri('img/about/circle.png')); ?>"></span>
                         <span class="career-summary__text">転職活動中</span>
                     </div>
