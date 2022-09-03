@@ -924,6 +924,7 @@ fv
   color: #fff;
   text-align: center;
   font-family: "Reitam", "Noto Sans JP", sans-serif;
+  text-transform: uppercase;
 }
 .fv .fv__wrapper .fv__main-copy h1 {
   font-size: 6.4rem;
@@ -1029,9 +1030,11 @@ ctaSec
   .fv .fv__wrapper .fv__main-copy h1 {
     margin-bottom: 4px;
     font-size: 2.4rem;
+    text-transform: uppercase;
   }
   .fv .fv__wrapper .fv__main-copy .fv__jp-copy {
     font-size: 1.2rem;
+    text-transform: uppercase;
   }
   /*--------------------------
 
@@ -1477,7 +1480,7 @@ form textarea {
 form .contactSec__btn {
   text-align: center;
 }
-form .contactSec__btn .wpcf7-spinner {
+form .contactSec__btn .btn-submit .wpcf7-submit .wpcf7-spinner {
   display: none;
 }
 
