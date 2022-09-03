@@ -9,7 +9,7 @@
                 <img src="<?php echo esc_url(get_theme_file_uri('img/home/fv-illust 1.png')); ?>" alt="Rika Nakamuraのイラスト">
             </p>
             <div class="fv__main-copy">
-                <h1>RIKA NAKAMURA</h1>
+                <h1>RIKA　NAKAMURA</h1>
                 <p class="fv__en-copy">WEB DEVELOPER</p>
                 <p class="fv__jp-copy">親身なコミュニケーションとチャレンジ精神で、<br class="only-SP">心地よいサイトを作ります。</p>
             </div>
