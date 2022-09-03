@@ -737,6 +737,7 @@ header
 }
 .header__inner .header__nav_list {
   display: flex;
+  font-family: "Reitam", "Noto Sans JP", sans-serif;
 }
 .header__inner .header__nav_list .header__nav_item {
   margin-left: 32px;
