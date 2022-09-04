@@ -1481,7 +1481,7 @@ form .contactSec__btn {
   margin: 0 auto;
 }
 form .contactSec__btn .btn-submit .wpcf7-submit .wpcf7-spinner {
-  display: none !important;
+  display: none;
 }
 
 /*-----------------------------
