@@ -1480,7 +1480,7 @@ form .contactSec__btn {
   text-align: center;
 }
 form .contactSec__btn .btn-submit .wpcf7-submit .wpcf7-spinner {
-  display: none;
+  display: none !important;
 }
 
 /*-----------------------------
