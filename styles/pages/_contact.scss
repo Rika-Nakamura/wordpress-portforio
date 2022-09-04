@@ -68,7 +68,8 @@ form {
     }
 
     .contactSec__btn {
-        text-align: center;
+        width: 200px;
+        margin: 0 auto;
 
         .btn-submit {
 
@@ -77,7 +78,7 @@ form {
                 .wpcf7-spinner {
                     display: none !important;
                 }
-    
+
             }
 
         }
