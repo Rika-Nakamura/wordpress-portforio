@@ -78,12 +78,6 @@
                     <dd class="worksSec__list-dd"><?php echo esc_html(get_post_meta(get_the_ID(), 'period', true)); ?></dd>
                     <dt class="worksSec__list-dt">作成のポイント</dt>
                     <dd class="worksSec__list-dd"><?php the_content(); ?></dd>
-                    <ul>
-                        <li>
-
-                        </li>
-                    </ul>
-                    </dd>
                 </dl>
                 <div class="btn worksSec__btn"><a href="<?php echo esc_url(home_url('/category/works/')); ?>">戻る</a></div>
 
