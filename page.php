@@ -67,7 +67,7 @@
                 <li class="career-item">
                     <div class="career-summary">
                         <span>2018年</span>
-                        <span class="icon-24"><img src="<?php echo esc_url(get_theme_file_uri('img/about/circle.png')); ?>"></span>
+                        <span class="icon-24"><img src="<?php echo esc_url(get_theme_file_uri('img/about/circle.png')); ?>" alt="circle"></span>
                         <span class="career-summary__text">社会福祉法人　かながわ共同会に入社</span>
                     </div>
                     <div class="career-description">
@@ -89,7 +89,7 @@
                 <li class="career-item">
                     <div class="career-summary">
                         <span>現在</span>
-                        <span class="icon-24"><img src="<?php echo esc_url(get_theme_file_uri('img/about/circle.png')); ?>"></span>
+                        <span class="icon-24"><img src="<?php echo esc_url(get_theme_file_uri('img/about/circle.png')); ?>" alt="circle"></span>
                         <span class="career-summary__text">転職活動中</span>
                     </div>
                     <div class="career-description">
@@ -179,7 +179,7 @@
             <li class="vision-item">
                 <div class="vision-summary">
                     <span class="vision-term">Vison1</span>
-                    <span class="icon-24"><img src="<?php echo esc_url(get_theme_file_uri('img/about/circle-bg-white.png')); ?>"></span>
+                    <span class="icon-24"><img src="<?php echo esc_url(get_theme_file_uri('img/about/circle-bg-white.png')); ?>" alt="circle"></span>
                     <span class="vision-summary__text">コーディングの基礎を固め、制作スキルを上げる</span>
                 </div>
                 <div class="vision-description">
@@ -190,7 +190,7 @@
             <li class="vision-item">
                 <div class="vision-summary">
                     <span class="vision-term">Vison2</span>
-                    <span class="icon-24"><img src="<?php echo esc_url(get_theme_file_uri('img/about/circle-bg-white.png')); ?>"></span>
+                    <span class="icon-24"><img src="<?php echo esc_url(get_theme_file_uri('img/about/circle-bg-white.png')); ?>" alt="circle"></span>
                     <span class="vision-summary__text"> ユーザビリティに配慮した設計力を身につける</span>
                 </div>
                 <div class="vision-description">
@@ -200,7 +200,7 @@
             <li class="vision-item">
                 <div class="vision-summary">
                     <span class="vision-term">Vison3</span>
-                    <span class="icon-24"><img src="<?php echo esc_url(get_theme_file_uri('img/about/circle-bg-white.png')); ?>"></span>
+                    <span class="icon-24"><img src="<?php echo esc_url(get_theme_file_uri('img/about/circle-bg-white.png')); ?>" alt="circle"></span>
                     <span class="vision-summary__text">あらゆる実装を任される、コーダーとして活躍する</span>
                 </div>
                 <div class="vision-description">
