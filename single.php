@@ -17,7 +17,6 @@
                 <!-- スライドショー -->
                 <div class="worksSec__slideshow">
                     <div class="slider">
-
                         <?php
                         /* カスタムフィールドに値があるかチェック */
                         $wp_slick_flg = get_post_meta($id, 'wp_slick_img', true);
@@ -55,13 +54,11 @@
                             echo $output_wp_slick;
                         }
                         ?>
-
                     </div>
-                    <!-- //スライドショー -->
-
-
-
                 </div>
+
+                <!-- //スライドショー -->
+
                 <p class="worksSec__lead"><?php the_title(); ?></p>
                 <dl class="worksSec__list worksSec wrapper">
                     <dt class="worksSec__dt">URL</dt>
