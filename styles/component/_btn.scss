@@ -13,6 +13,14 @@
             position: relative;
             z-index: 5;
 
+            &:hover {
+                margin-left: 20px;
+                transition-property:  background-color, margin-left;
+                transition-duration: 600ms;
+                transition-timing-function:  ease;
+                transition-delay: 0ms;
+            }
+
             a {
                 display: block;
                 width: auto;
@@ -32,7 +40,6 @@
                 &:hover {
                     color: #fff;
                     transition: .5s;
-                    font-size: 1.8rem;
                 }
 
                 &::after {

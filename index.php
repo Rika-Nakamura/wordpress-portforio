@@ -69,7 +69,6 @@
                 <div class="btn-wrap">
                     <div class="btn-inner">
                         <a href="<?php echo get_permalink(52); ?>">詳細を見る</a>
-                        <!-- <a href="about.html">詳細を見る</a> -->
                     </div>
                 </div>
             </div>

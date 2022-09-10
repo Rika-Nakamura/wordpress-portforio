@@ -623,6 +623,13 @@ dt {
   position: relative;
   z-index: 5;
 }
+.common-btn .btn-wrap .btn-inner:hover {
+  margin-left: 20px;
+  transition-property: background-color, margin-left;
+  transition-duration: 600ms;
+  transition-timing-function: ease;
+  transition-delay: 0ms;
+}
 .common-btn .btn-wrap .btn-inner a {
   display: block;
   width: auto;
@@ -641,7 +648,6 @@ dt {
 .common-btn .btn-wrap .btn-inner a:hover {
   color: #fff;
   transition: 0.5s;
-  font-size: 1.8rem;
 }
 .common-btn .btn-wrap .btn-inner a::after {
   content: "";
