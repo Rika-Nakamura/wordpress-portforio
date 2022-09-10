@@ -18,7 +18,7 @@
                 <div class="worksSec__slideshow">
                     <div class="slider">
 
-                    <?php
+                        <?php
                         /* カスタムフィールドに値があるかチェック */
                         $wp_slick_flg = get_post_meta($id, 'wp_slick_img', true);
 
@@ -27,7 +27,7 @@
 
                             /* ラッパーのクラスはJSで指定したものを使ってください */
                             $output_wp_slick = '<div class="slider">';
-                            
+
                             /* slickに使うスマートカスタムフィールドの値を取得 */
                             $wp_slick_grp = SCF::get('wp_slick_grp');
 
@@ -46,7 +46,7 @@
                                 /* URLと代替テキストを出力用の変数へ代入 */
                                 $output_wp_slick .= '<div><img src="' . $wp_slick_img_url . '" alt="' . $wp_slick_img_alt . '"></div>';
                             }
-                           
+
 
                             /* ラッパーを閉じます */
                             $output_wp_slick .= '<!-- /.wp-slick -->';
@@ -54,12 +54,12 @@
                             /* slickを出力 */
                             echo $output_wp_slick;
                         }
-                         ?>
-                      
+                        ?>
+
                     </div>
                     <!-- //スライドショー -->
-                   
-                   
+
+
 
                 </div>
                 <p class="worksSec__lead"><?php the_title(); ?></p>
@@ -81,7 +81,7 @@
                 </dl>
                 <div class="btn worksSec__btn"><a href="<?php echo esc_url(home_url('/category/works/')); ?>">戻る</a></div>
 
-               
+
 
         <?php endwhile;
         endif; ?>
