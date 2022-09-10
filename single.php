@@ -49,7 +49,7 @@
                            
 
                             /* ラッパーを閉じます */
-                            $output_wp_slick .= '</section><!-- /.wp-slick -->';
+                            $output_wp_slick .= '<!-- /.wp-slick -->';
 
                             /* slickを出力 */
                             echo $output_wp_slick;
