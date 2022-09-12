@@ -59,24 +59,26 @@
 
                 <!-- //スライドショー -->
 
-                <p class="worksSec__lead"><?php the_title(); ?></p>
-                <dl class="worksSec__list worksSec wrapper">
-                    <dt class="worksSec__dt">URL</dt>
-                    <dd class="worksSec__list-dd"><a href="<?php echo esc_html(get_post_meta(get_the_ID(), 'url', true)); ?>"><?php echo esc_html(get_post_meta(get_the_ID(), 'url', true)); ?></a></dd>
+                <div class="worksSec__bottomContainer">
+                    <p class="worksSec__lead"><?php the_title(); ?></p>
+                    <dl class="worksSec__list worksSec wrapper">
+                        <dt class="worksSec__dt">URL</dt>
+                        <dd class="worksSec__list-dd"><a href="<?php echo esc_html(get_post_meta(get_the_ID(), 'url', true)); ?>"><?php echo esc_html(get_post_meta(get_the_ID(), 'url', true)); ?></a></dd>
 
-                    <!-- <dd class="worksSec__list-dd"><?php echo esc_html(get_post_meta(get_the_ID(), 'url', true)); ?></dd> -->
-                    <dt class="worksSec__list-dt">主な特徴</dt>
-                    <dd class="worksSec__list-dd"><?php echo esc_html(get_post_meta(get_the_ID(), 'feature', true)); ?></dd>
-                    <dt class="worksSec__list-dt">制作範囲</dt>
-                    <dd class="worksSec__list-dd"><?php echo esc_html(get_post_meta(get_the_ID(), 'range', true)); ?></dd>
-                    <dt class="worksSec__list-dt">使用言語/ツール</dt>
-                    <dd class="worksSec__list-dd"><?php echo esc_html(get_post_meta(get_the_ID(), 'tool', true)); ?> </dd>
-                    <dt class="worksSec__list-dt">制作期間</dt>
-                    <dd class="worksSec__list-dd"><?php echo esc_html(get_post_meta(get_the_ID(), 'period', true)); ?></dd>
-                    <dt class="worksSec__list-dt">作成のポイント</dt>
-                    <dd class="worksSec__list-dd"><?php the_content(); ?></dd>
-                </dl>
-                <div class="btn worksSec__btn"><a href="<?php echo esc_url(home_url('/category/works/')); ?>">戻る</a></div>
+                        <!-- <dd class="worksSec__list-dd"><?php echo esc_html(get_post_meta(get_the_ID(), 'url', true)); ?></dd> -->
+                        <dt class="worksSec__list-dt">主な特徴</dt>
+                        <dd class="worksSec__list-dd"><?php echo esc_html(get_post_meta(get_the_ID(), 'feature', true)); ?></dd>
+                        <dt class="worksSec__list-dt">制作範囲</dt>
+                        <dd class="worksSec__list-dd"><?php echo esc_html(get_post_meta(get_the_ID(), 'range', true)); ?></dd>
+                        <dt class="worksSec__list-dt">使用言語/ツール</dt>
+                        <dd class="worksSec__list-dd"><?php echo esc_html(get_post_meta(get_the_ID(), 'tool', true)); ?> </dd>
+                        <dt class="worksSec__list-dt">制作期間</dt>
+                        <dd class="worksSec__list-dd"><?php echo esc_html(get_post_meta(get_the_ID(), 'period', true)); ?></dd>
+                        <dt class="worksSec__list-dt">作成のポイント</dt>
+                        <dd class="worksSec__list-dd"><?php the_content(); ?></dd>
+                    </dl>
+                    <div class="btn worksSec__btn"><a href="<?php echo esc_url(home_url('/category/works/')); ?>">戻る</a></div>
+                </div>
 
 
 
