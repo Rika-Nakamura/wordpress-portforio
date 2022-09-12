@@ -224,7 +224,7 @@
     </section>
     <!-- //cta -->
 
-    <div id="pagetop"><a href="#"></a></div>
+    <div id="pagetop"><a href=""></a></div>
 
 </main>
 <!-- //main -->
