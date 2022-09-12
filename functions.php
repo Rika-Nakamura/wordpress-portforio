@@ -82,6 +82,13 @@ function pagination($pages = '', $range = 2) {
     echo '</div>';
   }
 }
+
+
+// Contact Form 7のエディタで改行した際のpタグ自動生成をなくす
+add_filter('wpcf7_autop_or_not', 'wpcf7_autop_return_false');
+function wpcf7_autop_return_false() {
+	return false;
+}
       
 
 
