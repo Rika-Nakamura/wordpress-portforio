@@ -15,12 +15,7 @@
                
         <?php endwhile;
         endif; ?>
-
-
-
-
-
-
+        
     </section>
     <!-- //formSec -->
 
