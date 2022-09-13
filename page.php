@@ -41,8 +41,8 @@
     <section class="careerSec section-underlayer bg-bro">
         <div class="wrapper">
             <h2 class="section__title">career</h2>
-            <ul>
-                <li class="career-item">
+            <ul class="careerSec__list">
+                <li class="careerSec__item">
                     <div class="career-summary">
                         <span>2013年</span>
                         <span class="icon-24">
@@ -53,7 +53,7 @@
                         社会学を専攻し、女性労働や日本の貧困の根本原因について学びました。また社会調査士を取得し、データ分析ツールspssを使用した分析や、アンケート調査を習得しました。
                     </div>
                 </li>
-                <li class="career-item">
+                <li class="careerSec__item">
                     <div class="career-summary">
                         <span>2017年</span>
                         <span class="icon-24"><img src="<?php echo esc_url(get_theme_file_uri('img/about/circle.png')); ?>" alt="circle"></span>
@@ -64,7 +64,7 @@
                         貧困問題に行政として携わりたいとの思いで、川崎市役所の福祉職に入職しました。生活保護課のケースワーカーとして生活保護を受けられている市民の方へのケースワークや事務等に携わりました。
                     </div>
                 </li>
-                <li class="career-item">
+                <li class="careerSec__item">
                     <div class="career-summary">
                         <span>2018年</span>
                         <span class="icon-24"><img src="<?php echo esc_url(get_theme_file_uri('img/about/circle.png')); ?>" alt="circle"></span>
@@ -75,7 +75,7 @@
                         障害の方の生活介護支援を行いました。利用者さまにとって最良の生活環境づくりに努めました。
                     </div>
                 </li>
-                <li class="career-item">
+                <li class="careerSec__item">
                     <div class="career-summary">
                         <span>2020年</span>
                         <span class="icon-24"><img src="<?php echo esc_url(get_theme_file_uri('img/about/circle.png')); ?>" alt="circle"></span>
@@ -86,7 +86,7 @@
                         <span><a class="link" href="https://okaeri-cha-ri.com/index.html">Webサイト（おかえり）</a></span>を作成しました。
                     </div>
                 </li>
-                <li class="career-item">
+                <li class="careerSec__item">
                     <div class="career-summary">
                         <span>現在</span>
                         <span class="icon-24"><img src="<?php echo esc_url(get_theme_file_uri('img/about/circle.png')); ?>" alt="circle"></span>

@@ -1404,12 +1404,12 @@ ctaSec
   careerSec
 
   ----------------------------*/
-  .careerSec .career-item .career-summary {
+  .careerSec .careerSec__item .career-summary {
     grid-template-columns: 54px 27px 1fr;
     -moz-column-gap: 24px;
          column-gap: 24px;
   }
-  .careerSec .career-item .career-description {
+  .careerSec .careerSec__item .career-description {
     text-align: justify;
     border-left: 2px solid #7DBDCB;
     margin-left: 89px;
