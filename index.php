@@ -51,7 +51,7 @@
 
     <!-- aboutSec -->
     <section class="top-aboutSec section bg-bro">
-        <div class="wrapper">
+        <div class="wrapper aboutSec">
             <h2 class="section__title">about</h2>
             <div class="aboutSec__inner">
                 <p class="aboutSec__img">
