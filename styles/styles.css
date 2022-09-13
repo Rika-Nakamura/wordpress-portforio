@@ -611,26 +611,38 @@ dt {
     font-size: 1.6rem;
   }
 }
-.common-btn {
-  margin-top: 72px;
+.text-align-center {
+  text-align: center;
   color: #fff;
 }
-.common-btn .btn-wrap {
+.text-align-center .aboutSec__btn-wrapper,
+.text-align-center .contactSec__btn-wrapper {
+  margin-top: 72px;
+  color: #fff;
   text-align: center;
-}
-.common-btn .btn-wrap .btn-inner {
   display: inline-block;
+}
+.text-align-center .aboutSec__btn-wrapper .aboutSec__btn,
+.text-align-center .aboutSec__btn-wrapper .contactSec__btn,
+.text-align-center .contactSec__btn-wrapper .aboutSec__btn,
+.text-align-center .contactSec__btn-wrapper .contactSec__btn {
   position: relative;
   z-index: 5;
 }
-.common-btn .btn-wrap .btn-inner:hover {
+.text-align-center .aboutSec__btn-wrapper .aboutSec__btn:hover,
+.text-align-center .aboutSec__btn-wrapper .contactSec__btn:hover,
+.text-align-center .contactSec__btn-wrapper .aboutSec__btn:hover,
+.text-align-center .contactSec__btn-wrapper .contactSec__btn:hover {
   margin-left: 20px;
   transition-property: background-color, margin-left;
   transition-duration: 600ms;
   transition-timing-function: ease;
   transition-delay: 0ms;
 }
-.common-btn .btn-wrap .btn-inner a {
+.text-align-center .aboutSec__btn-wrapper .aboutSec__btn a,
+.text-align-center .aboutSec__btn-wrapper .contactSec__btn a,
+.text-align-center .contactSec__btn-wrapper .aboutSec__btn a,
+.text-align-center .contactSec__btn-wrapper .contactSec__btn a {
   display: block;
   width: auto;
   padding: 10px 50px;
@@ -645,11 +657,17 @@ dt {
   border-radius: 10px;
   color: #fff;
 }
-.common-btn .btn-wrap .btn-inner a:hover {
+.text-align-center .aboutSec__btn-wrapper .aboutSec__btn a:hover,
+.text-align-center .aboutSec__btn-wrapper .contactSec__btn a:hover,
+.text-align-center .contactSec__btn-wrapper .aboutSec__btn a:hover,
+.text-align-center .contactSec__btn-wrapper .contactSec__btn a:hover {
   color: #fff;
   transition: 0.5s;
 }
-.common-btn .btn-wrap .btn-inner a::after {
+.text-align-center .aboutSec__btn-wrapper .aboutSec__btn a::after,
+.text-align-center .aboutSec__btn-wrapper .contactSec__btn a::after,
+.text-align-center .contactSec__btn-wrapper .aboutSec__btn a::after,
+.text-align-center .contactSec__btn-wrapper .contactSec__btn a::after {
   content: "";
   display: block;
   position: absolute;
@@ -658,15 +676,21 @@ dt {
   background: #7DBDCB;
   top: 8px;
   left: 8px;
-  z-index: -1;
   transition: all 0.3s ease;
   border-radius: 10px;
+  z-index: -1;
 }
-.common-btn .btn-wrap .btn-inner a::after:hover {
+.text-align-center .aboutSec__btn-wrapper .aboutSec__btn a::after:hover,
+.text-align-center .aboutSec__btn-wrapper .contactSec__btn a::after:hover,
+.text-align-center .contactSec__btn-wrapper .aboutSec__btn a::after:hover,
+.text-align-center .contactSec__btn-wrapper .contactSec__btn a::after:hover {
   background: #fff;
   transition: 0.5s;
 }
-.common-btn .btn-wrap .btn-inner::before {
+.text-align-center .aboutSec__btn-wrapper .aboutSec__btn::before,
+.text-align-center .aboutSec__btn-wrapper .contactSec__btn::before,
+.text-align-center .contactSec__btn-wrapper .aboutSec__btn::before,
+.text-align-center .contactSec__btn-wrapper .contactSec__btn::before {
   content: "";
   position: absolute;
   display: block;
@@ -677,7 +701,10 @@ dt {
   left: -7px;
   transition: all 0.3s ease;
 }
-.common-btn .btn-wrap .btn-inner::after {
+.text-align-center .aboutSec__btn-wrapper .aboutSec__btn::after,
+.text-align-center .aboutSec__btn-wrapper .contactSec__btn::after,
+.text-align-center .contactSec__btn-wrapper .aboutSec__btn::after,
+.text-align-center .contactSec__btn-wrapper .contactSec__btn::after {
   content: "";
   position: absolute;
   display: block;

@@ -1,23 +1,26 @@
 @use '../global' as g;
 
-
-.common-btn {
-    margin-top: 72px;
+.text-align-center {
+    text-align: center;
     color: #fff;
 
-    .btn-wrap {
+    .aboutSec__btn-wrapper,
+    .contactSec__btn-wrapper {
+        margin-top: 72px;
+        color: #fff;
         text-align: center;
+        display: inline-block;
 
-        .btn-inner {
-            display: inline-block;
+        .aboutSec__btn,
+        .contactSec__btn {
             position: relative;
             z-index: 5;
-
+    
             &:hover {
                 margin-left: 20px;
-                transition-property:  background-color, margin-left;
+                transition-property: background-color, margin-left;
                 transition-duration: 600ms;
-                transition-timing-function:  ease;
+                transition-timing-function: ease;
                 transition-delay: 0ms;
             }
 
@@ -36,7 +39,7 @@
                 border-radius: 10px;
                 color: #fff;
 
-                
+
                 &:hover {
                     color: #fff;
                     transition: .5s;
@@ -51,12 +54,12 @@
                     background: g.$sub-color;
                     top: 8px;
                     left: 8px;
-                    z-index: -1;
                     -webkit-transition: all 0.3s ease;
                     -moz-transition: all 0.3s ease;
                     -o-transition: all 0.3s ease;
                     transition: all 0.3s ease;
                     border-radius: 10px;
+                    z-index: -1;
 
                     &:hover {
                         background: #fff;
@@ -106,15 +109,17 @@
 
         }
     }
+
 }
+
+// }
 
 
 
 
 
 // .input.wpcf7-submit
-.submit-btn
- {
+.submit-btn {
     height: 80px;
     width: 200px;
     font-size: 20px;
@@ -136,11 +141,12 @@
 .btn-submit {
     text-align: center;
 }
+
 @media screen and (max-width:768px) {
 
 
     .submit-btn {
         font-size: 1.6rem;
-        }
-    
+    }
+
 }

@@ -39,9 +39,9 @@
             <?php endforeach; ?>
             <?php wp_reset_postdata(); ?>
         </ul>
-        <div class="common-btn">
-            <div class="btn-wrap">
-                <div class="btn-inner">
+        <div class="text-align-center">
+            <div class="contactSec__btn-wrapper">
+                <div class="contactSec__btn">
                     <a href="<?php echo esc_url(home_url('/category/works/')); ?>">もっと見る</a>
                 </div>
             </div>
@@ -65,9 +65,9 @@
                     </p>
                 </div>
             </div>
-            <div class="common-btn">
-                <div class="btn-wrap">
-                    <div class="btn-inner">
+            <div class="text-align-center">
+                <div class="aboutSec__btn-wrapper">
+                    <div class="aboutSec__btn">
                         <a href="<?php echo get_permalink(52); ?>">詳細を見る</a>
                     </div>
                 </div>
