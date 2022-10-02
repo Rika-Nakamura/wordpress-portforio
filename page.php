@@ -24,7 +24,7 @@
         <div class="accordion">
             <div class="accordion__container">
                 <h4 class="accordion__title js-accordion-title">趣味</h4>
-                <div class="accordion__content">美術鑑賞・筋トレ・旅行・音楽・読書</div>
+                <div class="accordion__content">美術鑑賞・筋トレ・旅行・音楽(藤井風・平井大)・読書</div>
                 <h4 class="accordion__title js-accordion-title">性格</h4>
                 <div class="accordion__content">穏やか・まじめ・コツコツ励む</div>
                 <h4 class="accordion__title js-accordion-title">好きな食べ物</h4>
