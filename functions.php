@@ -89,7 +89,24 @@ add_filter('wpcf7_autop_or_not', 'wpcf7_autop_return_false');
 function wpcf7_autop_return_false() {
 	return false;
 }
-      
+
+
+/**************************************************
+ 読み込みコードのtype属性を消すコード
+ **************************************************/
+add_action('wp_loaded', 'prefix_output_buffer_start');
+function prefix_output_buffer_start() { 
+    ob_start("prefix_output_callback"); 
+}
+ 
+add_action('shutdown', 'prefix_output_buffer_end');
+function prefix_output_buffer_end() { 
+    ob_end_flush(); 
+}
+ 
+function prefix_output_callback($buffer) {
+    return preg_replace( "%[ ]type=[\'\"]text\/(javascript|css)[\'\"]%", '', $buffer );
+}     
 
 
 
