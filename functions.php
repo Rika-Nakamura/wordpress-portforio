@@ -106,15 +106,6 @@ function prefix_output_callback($buffer) {
     return preg_replace( "%[ ]type=[\'\"]text\/(javascript|css)[\'\"]%", '', $buffer );
 }     
 
-/**************************************************
- 末尾のスラッシュ「/」を削除するコード
- **************************************************/
-
-//末尾に「/」があれば削除する
-function untrailingslashit( $string ) {
-  return rtrim( $string, '/' );
-  //return rtrim( $string, '/\\' );
-}
 
 
 
