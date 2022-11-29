@@ -12,7 +12,7 @@
                 </p>
                 <div class="aboutSec__description">
                     <p class="aboutSec__txt">中村　理香(なかむら　りか)</p>
-                    <p class="aboutSec__txt">神奈川県に住んでいる27歳です。<br>
+                    <p class="aboutSec__txt">神奈川県に住んでいる28歳です。<br>
                         昔からモノづくりやデザインが好きで、2年前に福祉に関するWebサイトを作成したことから、Web制作に惹かれました。</p>
                     <p class="aboutSec__txt">
                         福祉現場で身につけた親身なコミュニケーションを活かし、持ち前の新しいことに自ら進んで学習する力でクライエントさまの課題解決のためのWeb制作に励みます。</p>
